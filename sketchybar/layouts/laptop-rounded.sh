@@ -173,7 +173,7 @@ done
 
 $BAR_NAME \
     --add item  workspaces_spacer_2 left \
-    --subscribe workspaces_spacer_2 aerospace_workspace_change aerospace_workspace_reload \
+    --subscribe workspaces_spacer_2 aerospace_workspace_change aerospace_window_moved aerospace_workspace_reload \
     --set       workspaces_spacer_2 \
                 script="$PLUGIN_SHARED_DIR/aerospace_windows.sh $MONITOR_ID" \
                 width=24 \
