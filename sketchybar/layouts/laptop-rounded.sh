@@ -352,5 +352,5 @@ $BAR_NAME --trigger volume_change
 $BAR_NAME --trigger aerospace_workspace_reload
 
 # Quick toggle play pause in order to update now playing
-#osascript -e 'tell application "Spotify" to playpause'
-#osascript -e 'tell application "Spotify" to playpause'
+osascript -e 'tell application "Spotify" to playpause'
+osascript -e 'tell application "Spotify" to playpause'
