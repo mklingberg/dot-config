@@ -7,7 +7,8 @@ function update_workspace_windows() {
     WORKSPACE_ID=$1
     WINDOWS=$2
 
-    APPS=$(echo "$WINDOWS" | awk -v monitor="$MONITOR_ID" -F'|' '$1 == monitor {print $2 "|" $3}')
+    # Filter on both monitor and workspace id
+    APPS=$(echo "$WINDOWS" | awk -v monitor="$MONITOR_ID" -v ws="$WORKSPACE_ID" -F'|' '$1 == monitor && $2 == ws {print $2 "|" $3}')
     ICON_STRIP=""
 
     while IFS='|' read -r ID APP_NAME;
@@ -28,53 +29,35 @@ function update_workspace_windows() {
     fi
 }
 
-function init_workspace_windows() {
-    for ID in $(aerospace list-workspaces --monitor "$MONITOR_ID" --empty no); do
-        WINDOWS=$(aerospace list-windows --workspace "$ID" --format "%{monitor-id}|%{workspace}|%{app-name}")
-        update_workspace_windows "$ID" "$WINDOWS"
+function update_monitor_windows() {
+    WINDOWS=$(aerospace list-windows --monitor "$MONITOR_ID" --format "%{monitor-id}|%{workspace}|%{app-name}")
+    for WORKSPACE_ID in $(aerospace list-workspaces --monitor "$MONITOR_ID"); do
+        update_workspace_windows "$WORKSPACE_ID" "$WINDOWS"
     done
-
-    init_focused
 }
 
-function refresh_monitor_windows() {
-    for ID in $(aerospace list-workspaces --monitor "$MONITOR_ID"); do
-        WINDOWS=$(aerospace list-windows --workspace "$ID" --format "%{monitor-id}|%{workspace}|%{app-name}")
-        update_workspace_windows "$ID" "$WINDOWS"
-    done
+function init_monitor_windows() {
+    update_monitor_windows
+    init_focused
 }
 
 function init_focused() {
     FOCUSED_WORKSPACE=$(aerospace list-workspaces --monitor "$MONITOR_ID" --visible)
-    FOCUSED_WORKSPACE_WINDOWS=$(aerospace list-windows --workspace "$FOCUSED_WORKSPACE" --format "%{monitor-id}|%{workspace}|%{app-name}")
-    
     # Trigger event to force init of focused workspace
-    $BAR_NAME --trigger aerospace_workspace_change FOCUSED_WORKSPACE_WINDOWS="$FOCUSED_WORKSPACE_WINDOWS" FOCUSED_WORKSPACE=$FOCUSED_WORKSPACE FOCUSED_MONITOR=$MONITOR_ID
+    $BAR_NAME --trigger aerospace_workspace_change FOCUSED_WORKSPACE="$FOCUSED_WORKSPACE" FOCUSED_MONITOR="$MONITOR_ID"
 }
 
 if [ "$SENDER" = "aerospace_window_moved" ]; then
     echo "Window moved"
     # As we dont know where the window was moved, we refresh all workspaces
-    refresh_monitor_windows
+    update_monitor_windows
 fi
 
 if [ "$SENDER" = "aerospace_workspace_reload" ]; then
-    init_workspace_windows
+    init_monitor_windows
     echo "Workspace reloaded"
 fi
 
-if [ "$SENDER" = "space_windows_change" ]; then
-    echo "Window created or destroyed"
-    # As we dont know where the window was creaded or destroyed, we refresh all workspaces
-    refresh_monitor_windows
-fi
-
 if [ "$SENDER" = "aerospace_workspace_change" ]; then
-    if [ -n "$FOCUSED_WORKSPACE" ]; then
-        update_workspace_windows "$FOCUSED_WORKSPACE" "$FOCUSED_WORKSPACE_WINDOWS"
-    fi
-
-    if [ -n "$PREV_WORKSPACE" ]; then
-        update_workspace_windows "$PREV_WORKSPACE" "$PREV_WORKSPACE_WINDOWS"
-    fi
+    update_monitor_windows
 fi

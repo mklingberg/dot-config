@@ -34,11 +34,9 @@ exec-on-workspace-change = [
     '-c',
     '''
     FOCUSED_MONITOR=$(aerospace list-monitors --focused --format "%{monitor-id}" | xargs);
-    FOCUSED_WORKSPACE_WINDOWS=$(aerospace list-windows --workspace $AEROSPACE_FOCUSED_WORKSPACE --format "%{monitor-id}|%{workspace}|%{app-name}");
-    PREV_WORKSPACE_WINDOWS=$(aerospace list-windows --workspace $AEROSPACE_PREV_WORKSPACE --format "%{monitor-id}|%{workspace}|%{app-name}");
-    sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_WORKSPACE_WINDOWS="$FOCUSED_WORKSPACE_WINDOWS" PREV_WORKSPACE_WINDOWS="$PREV_WORKSPACE_WINDOWS" FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    sketchybar-2 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_WORKSPACE_WINDOWS="$FOCUSED_WORKSPACE_WINDOWS" PREV_WORKSPACE_WINDOWS="$PREV_WORKSPACE_WINDOWS" FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    sketchybar-3 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_WORKSPACE_WINDOWS="$FOCUSED_WORKSPACE_WINDOWS" PREV_WORKSPACE_WINDOWS="$PREV_WORKSPACE_WINDOWS" FOCUSED_MONITOR=$FOCUSED_MONITOR;
+    sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
+    sketchybar-2 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
+    sketchybar-3 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
     '''
 ]
 
@@ -180,11 +178,11 @@ automatically-unhide-macos-hidden-apps = false
     #ctrl-7 = 'workspace 7'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    ctrl-shift-1 = ['move-node-to-workspace 1', 'exec-and-forget sketchybar --trigger aerospace_window_moved']
-    ctrl-shift-2 = ['move-node-to-workspace 2', 'exec-and-forget sketchybar --trigger aerospace_window_moved']
-    ctrl-shift-3 = ['move-node-to-workspace 3', 'exec-and-forget sketchybar --trigger aerospace_window_moved']
-    ctrl-shift-4 = ['move-node-to-workspace 4', 'exec-and-forget sketchybar --trigger aerospace_window_moved']
-    ctrl-shift-5 = ['move-node-to-workspace 5', 'exec-and-forget sketchybar --trigger aerospace_window_moved']
+    ctrl-shift-1 = ['move-node-to-workspace 1', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
+    ctrl-shift-2 = ['move-node-to-workspace 2', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
+    ctrl-shift-3 = ['move-node-to-workspace 3', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
+    ctrl-shift-4 = ['move-node-to-workspace 4', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
+    ctrl-shift-5 = ['move-node-to-workspace 5', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
     #ctrl-shift-6 = ['move-node-to-workspace 6', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
     #ctrl-shift-7 = ['move-node-to-workspace 7', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
 
