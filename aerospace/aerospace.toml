@@ -62,7 +62,7 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
-#on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 #on-focus-changed = ["move-mouse window-lazy-center"]
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
@@ -161,6 +161,10 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-shift-alt-j = 'join-with down'
     ctrl-shift-alt-k = 'join-with up'
     ctrl-shift-alt-l = 'join-with right'
+    #ctrl-shift-alt-down = 'join-with down'
+    #ctrl-shift-alt-up = 'join-with up'
+    ctrl-shift-alt-right = 'join-with right'
+    ctrl-shift-alt-left = 'join-with left'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
     ctrl-shift-a = 'resize smart +140'
