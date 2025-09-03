@@ -51,7 +51,7 @@ brew install --cask slack
 brew install --cask microsoft-teams
 
 ### Web
-brew install --cask arc
+brew install --cask zen
 brew install --cask google-chrome
 brew install --cask firefox
 
