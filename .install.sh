@@ -112,6 +112,9 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Disable "Press and Hold" accent selector
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # When NSWindowShouldDragOnGesture is set to YES, it allows you to drag windows using a three-finger drag gesture on the trackpad
 defaults write -g NSWindowShouldDragOnGesture YES
 
