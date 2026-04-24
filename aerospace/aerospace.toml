@@ -10,8 +10,8 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-    'exec-and-forget sketchybar',
-    'exec-and-forget sketchybar-2'#,
+    #'exec-and-forget sketchybar',
+    #'exec-and-forget sketchybar-2',
     #'exec-and-forget sketchybar-3'
 ]
 
@@ -30,14 +30,14 @@ start-at-login = true
 # ]
 
 exec-on-workspace-change = [
-    '/bin/bash', 
-    '-c',
-    '''
-    FOCUSED_MONITOR=$(aerospace list-monitors --focused --format "%{monitor-id}" | xargs);
-    sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    sketchybar-2 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    sketchybar-3 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    '''
+    #'/bin/bash', 
+    #'-c',
+    #'''
+    #FOCUSED_MONITOR=$(aerospace list-monitors --focused --format "%{monitor-id}" | xargs);
+    #sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
+    #sketchybar-2 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
+    #sketchybar-3 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
+    #'''
 ]
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
@@ -88,7 +88,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   10
     outer.left =       10
     outer.bottom =     10
-    outer.top =        [{ monitor.'^built-in retina display$' = 10 }, 40]
+    outer.top =        [{ monitor.'^built-in retina display$' = 0 }, 0]
     outer.right =      10
 
 # 'main' binding mode declaration
@@ -178,17 +178,21 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-3 = 'workspace 3'
     ctrl-4 = 'workspace 4'
     ctrl-5 = 'workspace 5'
-    #ctrl-6 = 'workspace 6'
-    #ctrl-7 = 'workspace 7'
+    ctrl-6 = 'workspace 6'
+    ctrl-7 = 'workspace 7'
+    ctrl-8 = 'workspace 8'
+    ctrl-9 = 'workspace 9'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    ctrl-shift-1 = ['move-node-to-workspace 1', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
-    ctrl-shift-2 = ['move-node-to-workspace 2', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
-    ctrl-shift-3 = ['move-node-to-workspace 3', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
-    ctrl-shift-4 = ['move-node-to-workspace 4', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
-    ctrl-shift-5 = ['move-node-to-workspace 5', 'exec-and-forget sketchybar --trigger aerospace_window_moved', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
-    #ctrl-shift-6 = ['move-node-to-workspace 6', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
-    #ctrl-shift-7 = ['move-node-to-workspace 7', 'exec-and-forget sketchybar-2 --trigger aerospace_window_moved']
+    ctrl-shift-1 = ['move-node-to-workspace 1']
+    ctrl-shift-2 = ['move-node-to-workspace 2']
+    ctrl-shift-3 = ['move-node-to-workspace 3']
+    ctrl-shift-4 = ['move-node-to-workspace 4']
+    ctrl-shift-5 = ['move-node-to-workspace 5']
+    ctrl-shift-6 = ['move-node-to-workspace 6']
+    ctrl-shift-7 = ['move-node-to-workspace 7']
+    ctrl-shift-8 = ['move-node-to-workspace 8']
+    ctrl-shift-9 = ['move-node-to-workspace 9']
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     #alt-tab = 'workspace-back-and-forth'
@@ -245,10 +249,12 @@ automatically-unhide-macos-hidden-apps = false
     1 = ['dell','hdr 4k','main']
     2 = ['dell','hdr 4k','main']
     3 = ['dell','hdr 4k','main']
-    #4 = ['hdr 4k','main']
-    #5 = ['hdr 4k','main']
-    4 = ['sdqhd', 'built-in','secondary','main']
-    5 = ['built-in','secondary','main']
+    4 = ['dell','hdr 4k','main']
+    5 = ['dell','hdr 4k','main']
+    6 = ['built-in','secondary','main']
+    7 = ['built-in','secondary','main']
+    8 = ['built-in','secondary','main']
+    9 = ['built-in','secondary','main']
 
 [[on-window-detected]]
     if.app-id = 'com.microsoft.AzureVpnMac'
