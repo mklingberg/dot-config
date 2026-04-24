@@ -235,3 +235,19 @@ symbol = " "
 
 [gradle]
 symbol = " "
+
+[dotnet]
+# Only show .NET SDK version when repository explicitly pins SDK via global.json
+detect_files = ["global.json"]
+detect_extensions = []
+detect_folders = []
+heuristic = false
+format = "[.NET $version]($style) "
+
+[custom.dotnet_tfm]
+description = "Show target framework from nearby .csproj"
+when = "ls *.csproj >/dev/null 2>&1"
+command = "grep -hEo '<TargetFrameworks?>[^<]+' *.csproj 2>/dev/null | head -n1 | sed -E 's/<TargetFrameworks?>//' | cut -d';' -f1"
+symbol = "🎯 "
+style = "bold purple"
+format = "[$symbol$output]($style) "
