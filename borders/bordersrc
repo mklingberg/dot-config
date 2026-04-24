@@ -2,10 +2,10 @@
 
 options=(
 	style=round
-	width=4.0
+	width=2.0
 	hidpi=on
-	active_color=0xfff8f8f2 #0xe0f8f8f2
-	inactive_color=0x44f8f8f2 #0xed333544 #0xed414450 #0x0040434f
+	active_color=0xccf8f8f2 #0xe0f8f8f2
+	inactive_color=0x00f8f8f2 #0xed333544 #0xed414450 #0x0040434f
 	blacklist='Preview,System Settings,AI Chat,Raycast,Messages,Windows App,Privileges' #ChatGPT,
 )
 
