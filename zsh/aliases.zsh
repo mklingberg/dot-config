@@ -36,6 +36,10 @@ alias gspop='git stash pop'
 
 # zsh
 alias zr='source ~/.zshrc'
+theme() {
+  ~/.config/toggle-theme.sh "$@"
+  [[ $? -eq 0 && -n "${1:-}" ]] && source ~/.zshrc
+}
 
 # Brew
 alias bsrb='brew services restart borders'
