@@ -20,5 +20,9 @@
         "key": "shift+cmd+enter",
         "command": "git.sync",
         "when": "!operationInProgress"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.view.extension.test"
     }
 ]
