@@ -31,6 +31,9 @@ brew install podman
 brew install podman-compose
 brew install nvm
 
+### Agent tools
+brew install rtk
+
 ## Casks
 echo "Installing Brew Casks..."
 
@@ -132,6 +135,12 @@ ln -s ~/.config/zsh/zshrc ~/.zshrc
 ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
 ln -s ~/.config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+
+# Install Pi
+curl -fsSL https://pi.dev/install.sh | sh
+
+# Install RTK Agent
+rtk init -g --agent pi
 
 # Start Services
 echo "Starting Services (grant permissions)..."
