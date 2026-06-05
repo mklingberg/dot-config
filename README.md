@@ -1,4 +1,4 @@
-# .config
+# ~/.config
 
 An opinionated macOS setup for fast navigation, clean visuals, and low-friction development.
 
