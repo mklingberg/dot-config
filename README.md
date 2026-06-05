@@ -1,60 +1,127 @@
 # .config
 
-Welcome to my `.config` folder. This repository contains the configuration files that power my customized setup. Let's explore the components that make my system efficient and visually appealing.
+An opinionated macOS setup for fast navigation, clean visuals, and low-friction development.
 
-## Aerospace
-Aerospace is my window manager of choice, seamlessly integrating with SketchyBar to display active and inactive workspaces and application windows. It provides a streamlined and organized desktop experience.
+This repo is the part of my machine that actually matters: window management, status bars, terminal stack, editor defaults, theme syncing, and bootstrap scripts. Versioning it keeps the environment reproducible instead of slowly decaying into one-off GUI tweaks.
 
-## JankyBorders
-JankyBorders adds a touch of elegance to my windows by providing borders. It runs as a standalone service, ensuring that every window is neatly framed.
+> Keyboard-first. Readable. Rebuildable.
 
+## What defines the setup
+
+### AeroSpace
+The backbone of the desktop.
+
+AeroSpace handles tiling, workspace movement, monitor assignment, and most of the navigation model. The config shows this is not just “installed” — it is the primary control layer:
+- numbered workspaces
+- hjkl-style focus and move bindings
+- floating exceptions for specific apps
+- monitor-aware workspace assignment
+- hooks intended to integrate with SketchyBar
+
+Config:
+- `aerospace/aerospace.toml`
+
+### SketchyBar
+The visual layer on top of the window manager.
+
+This setup uses SketchyBar as the status surface for workspace state and multi-display layouts. There are separate bar instances/configs for different displays, plus a startup script to launch them.
+
+Relevant files:
+- `sketchybar/sketchybarrc`
+- `sketchybar-2/sketchybarrc`
+- `sketchybar/theme.sh`
+- `.start_on_login.sh`
+
+### borders
+A small component with high payoff.
+
+`borders` makes focus state obvious, which matters more in a tiling setup than on a stock desktop. The current config uses rounded borders, hidpi support, and an app blacklist.
+
+Config:
+- `borders/bordersrc`
+
+### Ghostty + Starship + Zsh
+This is the real terminal stack.
+
+Ghostty is the primary terminal, Starship provides the prompt, and Zsh carries aliases + shell customizations. Together they define most of the day-to-day command-line experience.
+
+Relevant files:
+- `ghostty/config`
+- `starship/starship.toml`
+- `zsh/zshrc`
+- `zsh/aliases.zsh`
+- `zsh/custom.zsh`
+
+Notable details:
+- Ghostty uses hidden titlebar, padded layout, and Catppuccin theme
+- Starship is heavily customized, including git, cloud, Kubernetes, and .NET signal
+- Zsh exposes quick git aliases and a `theme` helper
+
+### Shared theme switching
+One of the nicer parts of the setup.
+
+`toggle-theme.sh` switches theme across multiple tools in one command instead of making theme drift inevitable.
+
+It currently syncs:
+- Ghostty
+- Starship
+- pi
+
+Script:
+- `toggle-theme.sh`
+
+Usage:
 ```bash
-brew services start jankyborders
+theme frappe
+theme macchiato
+theme dracula
 ```
 
-## SketchyBar
-SketchyBar is a key component of my setup, offering a sleek and customizable bar for my desktop. I have configured two layouts: one for use with external displays (desktop) and one for the MacBook's built-in display (laptop).
+### VS Code
+Editor defaults live here too, so the coding environment stays consistent.
 
-### Adding a Secondary Bar
-To add a secondary bar for an external screen, use the following command:
-```bash
-ln -s $(which sketchybar) $(dirname $(which sketchybar))/sketchybar-2
-```
+The current settings suggest a practical coding setup: clean UI, JetBrains Mono, Catppuccin theme, Copilot enabled, Podman/devcontainer integration, and terminal/editor tuning.
 
-## Starship
-Starship is my terminal prompt of choice. It is fast, highly customizable, and enhances the terminal experience.
+Config:
+- `vscode/settings.json`
+- `vscode/keybindings.json`
 
-## Terminal
-Using Ghostty configured with the Starship prompt and plugins from oh-my-zsh. This combination provides a powerful and efficient terminal environment.
+### Bootstrap scripts
+This repo also contains the “bring a new machine up fast” layer.
 
-Wezterm & custom config location:
-```bash
-ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
-```
+Relevant files:
+- `.install.sh`
+- `.start_on_login.sh`
 
-## Zsh
-Zsh is my shell, and I have linked it to my config folder. To set it up, run the following command:
-```bash
-ln -s ~/.config/zsh/zshrc ~/.zshrc
-```
-This setup ensures a consistent and optimized shell experience.
+These cover:
+- Homebrew installs
+- macOS defaults
+- fonts
+- symlinks into `$HOME`
+- startup services
 
-## BetterTouchTool
-BetterTouchTool is used for custom touchpad and mouse gestures, enhancing productivity and ease of use.
+## Secondary / optional pieces
 
-## BetterMouse
-BetterMouse provides enhanced functionality and customizations with logi kbd & mouse, improving overall usability.
+### WezTerm
+Still configured, but looks secondary now rather than central.
 
+Config:
+- `wezterm/wezterm.lua`
 
-## VSCode
-Moving vscode settings to .config/vscode folder for version management.
+### LinearMouse
+There is active device-specific mouse tuning here, mainly for pointer/scroll behavior.
 
-```bash
-ln -s ~/.config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-```
-### Dracula Zsh
-I am using the Dracula theme for Zsh to provide a visually appealing terminal interface.
-https://draculatheme.com/zsh
+Config:
+- `linearmouse/linearmouse.json`
 
-- ReadMe generated by CoPilot :)
+## Why this repo exists
+
+Good machine setup is not decoration. It is leverage.
+
+A strong local environment should:
+- reduce friction every hour
+- make focus state obvious
+- keep terminal/editor behavior consistent
+- survive reinstalls and new machines
+
+That is what this repo is for.
