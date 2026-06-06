@@ -206,7 +206,7 @@ automatically-unhide-macos-hidden-apps = false
 
     # Go to sleep
     cmd-ctrl-s = 'exec-and-forget pmset sleepnow'
-    cmd-ctrl-r = ['exec-and-forget sketchybar --reload', 'exec-and-forget sketchybar-2 --reload', 'exec-and-forget sketchybar-3 --reload']
+    cmd-ctrl-r = ['exec-and-forget sketchybar --reload']
 
 
 # 'service' binding mode declaration.
@@ -243,7 +243,7 @@ automatically-unhide-macos-hidden-apps = false
     b = ['balance-sizes', 'mode main']
 
     s = ['exec-and-forget sketchybar --reload', 'mode main']
-    cmd-s = ['exec-and-forget sketchybar-2 --reload', 'mode main']
+    #cmd-s = ['exec-and-forget sketchybar-2 --reload', 'mode main']
 
 [workspace-to-monitor-force-assignment]
     1 = ['dell','hdr 4k','main']

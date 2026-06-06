@@ -11,34 +11,14 @@ This repo is the part of my machine that actually matters: window management, st
 ### AeroSpace
 The backbone of the desktop.
 
-AeroSpace handles tiling, workspace movement, monitor assignment, and most of the navigation model. The config shows this is not just “installed” — it is the primary control layer:
+AeroSpace handles tiling, workspace movement, monitor assignment, and most of the navigation model. The config shows this is not just "installed" - it is the primary control layer:
 - numbered workspaces
 - hjkl-style focus and move bindings
 - floating exceptions for specific apps
 - monitor-aware workspace assignment
-- hooks intended to integrate with SketchyBar
 
 Config:
 - `aerospace/aerospace.toml`
-
-### SketchyBar
-The visual layer on top of the window manager.
-
-This setup uses SketchyBar as the status surface for workspace state and multi-display layouts. There are separate bar instances/configs for different displays, plus a startup script to launch them.
-
-Relevant files:
-- `sketchybar/sketchybarrc`
-- `sketchybar-2/sketchybarrc`
-- `sketchybar/theme.sh`
-- `.start_on_login.sh`
-
-### borders
-A small component with high payoff.
-
-`borders` makes focus state obvious, which matters more in a tiling setup than on a stock desktop. The current config uses rounded borders, hidpi support, and an app blacklist.
-
-Config:
-- `borders/bordersrc`
 
 ### Ghostty + Starship + Zsh
 This is the real terminal stack.
@@ -87,11 +67,10 @@ Config:
 - `vscode/keybindings.json`
 
 ### Bootstrap scripts
-This repo also contains the “bring a new machine up fast” layer.
+This repo also contains the "bring a new machine up fast" layer.
 
 Relevant files:
 - `.install.sh`
-- `.start_on_login.sh`
 
 These cover:
 - Homebrew installs
@@ -100,19 +79,16 @@ These cover:
 - symlinks into `$HOME`
 - startup services
 
-## Secondary / optional pieces
+## Archived / retired pieces
 
-### WezTerm
-Still configured, but looks secondary now rather than central.
+Older or retired configs now live under `_archive/` instead of pretending they are still active.
 
-Config:
-- `wezterm/wezterm.lua`
-
-### LinearMouse
-There is active device-specific mouse tuning here, mainly for pointer/scroll behavior.
-
-Config:
-- `linearmouse/linearmouse.json`
+That currently includes archived setups for:
+- Borders
+- SketchyBar
+- older SketchyBar variants
+- WezTerm
+- older startup/login helpers
 
 ## Why this repo exists
 
@@ -128,6 +104,6 @@ That is what this repo is for.
 
 ## Related repos
 
-- [dot-pi](https://github.com/mklingberg/dot-pi) — pi setup, agents, planning workflow
-- [dot-config](https://github.com/mklingberg/dot-config) — macOS/dev environment config
-- [dot-agents](https://github.com/mklingberg/dot-agents) — personal pi skill library
+- [dot-pi](https://github.com/mklingberg/dot-pi) - pi setup, agents, planning workflow
+- [dot-config](https://github.com/mklingberg/dot-config) - macOS/dev environment config
+- [dot-agents](https://github.com/mklingberg/dot-agents) - personal pi skill library

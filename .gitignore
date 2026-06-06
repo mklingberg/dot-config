@@ -4,23 +4,15 @@
 # But not these files...
 !README.md
 !.gitignore
+!_archive
+!_archive/**/*
 !sketchybar
 !sketchybar/**/*
-!borders
-!borders/**/*
-!desktop_bar
-!desktop_bar/**/*
-!sketchybar-2
-!sketchybar-2/**/*
-!sketchybar-3
-!sketchybar-3/**/*
 !zsh
 !zsh/**/*
 !ghostty
 !ghostty/**/*
 !vscode/keybindings.json
-!wezterm
-!wezterm/**/*
 !starship
 !starship.toml
 !aerospace

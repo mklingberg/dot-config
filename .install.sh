@@ -16,7 +16,7 @@ brew install gsl
 brew install wget
 brew install jq
 brew install sketchybar
-brew install borders
+#brew install borders
 brew install gettext
 brew install oh-my-posh
 brew install libyaml
@@ -46,7 +46,7 @@ brew install --cask spotify
 brew install --cask nikitabobko/tap/aerospace
 
 ### Terminals
-brew install --cask wezterm
+#brew install --cask wezterm
 brew install --cask ghostty
 
 ### Communication
@@ -132,7 +132,7 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.
 
 # Create links to use .config
 ln -s ~/.config/zsh/zshrc ~/.zshrc
-ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
+#ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
 ln -s ~/.config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 
@@ -144,4 +144,4 @@ rtk init -g --agent pi
 
 # Start Services
 echo "Starting Services (grant permissions)..."
-brew services start borders
+#brew services start borders

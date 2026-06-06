@@ -42,7 +42,7 @@ theme() {
 }
 
 # Brew
-alias bsrb='brew services restart borders'
+#alias bsrb='brew services restart borders'
 alias bo='brew outdated'
 alias bug='brew upgrade'
 alias bud='brew update'
