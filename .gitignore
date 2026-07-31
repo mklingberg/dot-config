@@ -20,6 +20,11 @@
 !.install.sh
 !Default.bttpreset
 !bm_cfg.plist
+!secrets
+!secrets/**/*
+
+# Regenerated at every login - no secret material, but pure churn
+secrets/*.log
 
 # Ignore all .DS_Store files
 .DS_Store
