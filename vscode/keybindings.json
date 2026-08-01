@@ -8,5 +8,143 @@
     {
         "key": "ctrl+shift+t",
         "command": "workbench.view.extension.test"
+    },
+
+    // ---------------------------------------------------------------
+    // Rider "ReSharper (macOS)" keymap — navigation bindings that the
+    // jetbrains.resharper-code extension does not ship itself.
+    // Keystrokes taken from Rider.app keymap-resharper.jar
+    // (keymaps/ReSharper OSX.xml + its parent Visual Studio OSX.xml).
+    // ---------------------------------------------------------------
+
+    // Search Everywhere / Go to Everything (cmd+N shadows New File)
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.quickOpen",
+        "when": "!sideBarFocus"
+    },
+    // Go to File
+    {
+        "key": "shift+cmd+n",
+        "command": "workbench.action.quickOpen"
+    },
+    // Go to Symbol (solution-wide)
+    {
+        "key": "shift+alt+cmd+n",
+        "command": "workbench.action.showAllSymbols"
+    },
+    // Go to Declaration (cmd+B kept scoped so it still toggles the sidebar elsewhere)
+    {
+        "key": "cmd+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
+    },
+    // Go to Implementation
+    {
+        "key": "alt+cmd+b",
+        "command": "editor.action.goToImplementation",
+        "when": "editorTextFocus"
+    },
+    // Go to Type of Symbol
+    {
+        "key": "shift+cmd+t",
+        "command": "editor.action.goToTypeDefinition",
+        "when": "editorTextFocus"
+    },
+    // Go to Base Symbol
+    {
+        "key": "cmd+u",
+        "command": "references-view.showSupertypes",
+        "when": "editorTextFocus"
+    },
+    // Type Hierarchy
+    {
+        "key": "alt+cmd+h",
+        "command": "references-view.showTypeHierarchy",
+        "when": "editorTextFocus"
+    },
+    // Find Usages
+    {
+        "key": "alt+f7",
+        "command": "references-view.findReferences",
+        "when": "editorHasReferenceProvider"
+    },
+    // Show Usages (peek)
+    {
+        "key": "alt+cmd+f7",
+        "command": "editor.action.referenceSearch.trigger",
+        "when": "editorHasReferenceProvider"
+    },
+    // Find Usages in File
+    {
+        "key": "shift+cmd+f7",
+        "command": "editor.action.wordHighlight.next",
+        "when": "editorTextFocus"
+    },
+    // File Structure
+    {
+        "key": "cmd+f12",
+        "command": "workbench.action.gotoSymbol"
+    },
+    // Recent Files
+    {
+        "key": "cmd+e",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+    },
+    // Go to Last Edit Location
+    {
+        "key": "shift+cmd+backspace",
+        "command": "workbench.action.navigateToLastEditLocation"
+    },
+    // Navigate Back / Forward
+    {
+        "key": "cmd+-",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "workbench.action.navigateForward"
+    },
+    // Go to Line
+    {
+        "key": "cmd+g",
+        "command": "workbench.action.gotoLine"
+    },
+    // Next / Previous error in solution
+    {
+        "key": "alt+pagedown",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+pageup",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "editorFocus"
+    },
+    // Solution Explorer
+    {
+        "key": "cmd+1",
+        "command": "workbench.view.explorer"
+    },
+    // Find tool window
+    {
+        "key": "alt+cmd+u",
+        "command": "workbench.view.search"
+    },
+    // Inspection Results
+    {
+        "key": "alt+cmd+,",
+        "command": "workbench.actions.view.problems"
+    },
+    // Refactor This
+    {
+        "key": "shift+cmd+r",
+        "command": "editor.action.refactor",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    // Replace in Path
+    {
+        "key": "shift+cmd+h",
+        "command": "workbench.action.replaceInFiles"
     }
 ]
