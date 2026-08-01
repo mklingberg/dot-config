@@ -17,7 +17,6 @@ brew install gsl
 brew install wget
 brew install jq
 brew install sketchybar
-#brew install borders
 brew install gettext
 brew install oh-my-posh
 brew install libyaml
@@ -27,7 +26,6 @@ brew install kubeseal
 brew install openssl@3
 brew install ca-certificates
 brew install azure-cli
-#brew install sqlite
 brew install podman
 brew install podman-compose
 brew install nvm
