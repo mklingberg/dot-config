@@ -4,6 +4,8 @@
 # But not these files...
 !README.md
 !.gitignore
+!git
+!git/**/*
 !_archive
 !_archive/**/*
 !sketchybar
