@@ -77,7 +77,7 @@ brew install --cask powershell
 brew install --cask microsoft-azure-storage-explorer
 brew install --cask gitcredentialmanager
 brew install --cask github
-
+brew install --cask orca
 
 # macOS Settings
 echo "Changing macOS defaults..."
@@ -140,6 +140,19 @@ link ~/.config/zsh/zshrc ~/.zshrc
 link ~/.config/zsh/zprofile ~/.zprofile
 link ~/.config/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 link ~/.config/vscode/keybindings.json "$HOME/Library/Application Support/Code/User/keybindings.json"
+
+# Clone dotfile repos (idempotent: skip if already present)
+clone_repo() {
+  local url="$1" dest="$2"
+  if [ -d "$dest/.git" ]; then
+    echo "Skipping clone of $url ($dest already exists)"
+  else
+    git clone "$url" "$dest"
+  fi
+}
+
+clone_repo https://github.com/mklingberg/dot-pi.git ~/.pi
+clone_repo https://github.com/mklingberg/dot-agents.git ~/.agents
 
 # Install Pi
 curl -fsSL https://pi.dev/install.sh | sh
