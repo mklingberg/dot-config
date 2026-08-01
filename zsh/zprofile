@@ -1,0 +1,7 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Add .NET Core SDK tools
+export PATH="$PATH:/Users/marcusklingberg/.dotnet/tools"
+
+# Added by Toolbox App
+export PATH="$PATH:/Users/marcusklingberg/Library/Application Support/JetBrains/Toolbox/scripts"
