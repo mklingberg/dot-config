@@ -79,6 +79,14 @@ These cover:
 - symlinks into `$HOME`
 - startup services
 
+### Secrets in keychain
+
+Secrets mapped to environment variables live in the keychain.
+
+```bash
+security add-generic-password -a "$USER" -s orca-azure-devops-pat -w '<SECRET>'
+```
+
 ## Archived / retired pieces
 
 Older or retired configs now live under `_archive/` instead of pretending they are still active.
