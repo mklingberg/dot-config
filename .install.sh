@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # Homebrew
 
@@ -46,7 +47,6 @@ brew install --cask spotify
 brew install --cask nikitabobko/tap/aerospace
 
 ### Terminals
-#brew install --cask wezterm
 brew install --cask ghostty
 
 ### Communication
@@ -69,12 +69,9 @@ brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
 
 ### Development
-brew tap isen-ng/dotnet-sdk-versions
 brew install --cask dotnet-sdk
-brew install --cask dotnet-sdk7
-brew install --cask dotnet-sdk8
 brew install --cask devtunnel
-brew install --cask postman
+brew install --cask bruno
 brew install --cask rider
 brew install --cask visual-studio-code
 brew install --cask podman-desktop
@@ -124,18 +121,27 @@ defaults write -g NSWindowShouldDragOnGesture YES
 echo "Fonts and utils..."
 
 # Installing Fonts
-git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
+git clone https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
 mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
 rm -rf /tmp/SFMono_Nerd_Font/
 
 curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.32/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
 
-# Create links to use .config
-ln -s ~/.config/zsh/zshrc ~/.zshrc
-ln -s ~/.config/zsh/zprofile ~/.zprofile
-#ln -s ~/.config/wezterm/wezterm.lua ~/.wezterm.lua
-ln -s ~/.config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+# Create links to use .config (idempotent: skip if already linked)
+link() {
+  local src="$1" dest="$2"
+  if [ -L "$dest" ] || [ -e "$dest" ]; then
+    echo "Skipping $dest (already exists)"
+  else
+    mkdir -p "$(dirname "$dest")"
+    ln -s "$src" "$dest"
+  fi
+}
+
+link ~/.config/zsh/zshrc ~/.zshrc
+link ~/.config/zsh/zprofile ~/.zprofile
+link ~/.config/vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+link ~/.config/vscode/keybindings.json "$HOME/Library/Application Support/Code/User/keybindings.json"
 
 # Install Pi
 curl -fsSL https://pi.dev/install.sh | sh
@@ -145,4 +151,3 @@ rtk init -g --agent pi
 
 # Start Services
 echo "Starting Services (grant permissions)..."
-#brew services start borders
