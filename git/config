@@ -1,0 +1,12 @@
+[user]
+	name = Marcus Klingberg
+	email = marcus.klingberg@gmail.com
+[credential]
+	azreposCredentialType = oauth
+[core]
+	autocrlf = input
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
