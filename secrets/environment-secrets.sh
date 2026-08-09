@@ -1,10 +1,13 @@
 #!/bin/zsh
-# Publishes secrets from the login keychain into the GUI login session, so that
+# Publishes values from the login keychain into the GUI login session, so that
 # GUI-launched processes (Orca.app, agent harnesses started from Dock/Finder)
 # inherit them as environment variables.
 #
+# Mostly secrets, but not only: an account email is not a credential yet still
+# must not be committed, and the keychain is the local untracked store for both.
+#
 # Source of truth: secrets.conf, alongside this script. That file lists service
-# names only — no secret material — and is safe to commit.
+# names only — no values of any kind — and is safe to commit.
 #
 # Run at login via ~/Library/LaunchAgents/com.marcusklingberg.environment-secrets.plist
 #
