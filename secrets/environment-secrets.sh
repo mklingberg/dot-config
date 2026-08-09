@@ -9,12 +9,13 @@
 # Source of truth: secrets.conf, alongside this script. That file lists service
 # names only — no values of any kind — and is safe to commit.
 #
-# Run at login via ~/Library/LaunchAgents/com.marcusklingberg.environment-secrets.plist
+# Run at login via a LaunchAgent plist in ~/Library/LaunchAgents; its label carries the
+# local account name, so discover it rather than hardcoding it (see below).
 #
 # Register or rotate an item: ./register-secret.sh
 #
 # Apply without logging out:
-#   launchctl kickstart -k gui/$(id -u)/com.marcusklingberg.environment-secrets
+#   launchctl kickstart -k gui/$(id -u)/$(launchctl list | awk '/environment-secrets/{print $3}')
 # Already-running processes keep their old environment — restart them to pick up changes.
 
 set -u

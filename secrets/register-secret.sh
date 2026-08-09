@@ -62,7 +62,7 @@ register() {
   echo "Stored: $service (${#value} chars)"
   echo
   echo "Next: publish it into the login session with"
-  echo "  launchctl kickstart -k gui/$(id -u)/com.marcusklingberg.environment-secrets"
+  echo "  launchctl kickstart -k gui/$(id -u)/$(launchctl list | awk '/environment-secrets/{print $3}')"
   echo "Already-running apps keep their old environment — restart them to pick it up."
 }
 
