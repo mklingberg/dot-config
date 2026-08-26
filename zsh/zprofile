@@ -1,5 +1,18 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Keychain-backed secrets for every login shell.
+#
+# The LaunchAgent publishes these with `launchctl setenv`, which only reaches
+# processes started after it runs — and at login Orca.app routinely starts a few
+# seconds first, then stays up for days handing that empty environment to every
+# terminal and agent it spawns. Reading the keychain here removes the race:
+# anything with a login shell in its ancestry gets the values regardless of
+# launch order. Already-set values are left alone.
+[ -r "$HOME/.config/secrets/secret-env.sh" ] && {
+  . "$HOME/.config/secrets/secret-env.sh"
+  secret_env
+}
+
 # Add .NET Core SDK tools
 export PATH="$PATH:/Users/marcusklingberg/.dotnet/tools"
 
