@@ -103,7 +103,7 @@ brew install --cask visual-studio-code
 brew install --cask podman-desktop
 brew install --cask powershell
 brew install --cask microsoft-azure-storage-explorer
-brew install --cask gitcredentialmanager
+brew install --cask git-credential-manager
 brew install --cask github
 brew install --cask orca
 
