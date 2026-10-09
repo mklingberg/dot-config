@@ -196,8 +196,15 @@ clone_repo https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh
 # Install Pi
 curl -fsSL https://pi.dev/install.sh | sh
 
-# Install RTK Agent
-rtk init -g --agent pi
+# Install packages declared in dot-pi's settings.json (incl. pi-permission-system).
+# No `rtk init --agent pi`: dot-pi ships late-extensions/rtk.ts, loaded after the
+# permission gate; rtk init would add extensions/rtk.ts, which loads before it.
+export PATH="$HOME/.pi/agent/bin:$HOME/.local/bin:$PATH"
+if command -v pi >/dev/null 2>&1; then
+  pi update --extensions
+else
+  echo "pi not on PATH yet: open a new shell and run 'pi update --extensions'"
+fi
 
 # Start Services
 echo "Starting Services (grant permissions)..."
