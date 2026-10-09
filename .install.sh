@@ -31,6 +31,8 @@ fi
 ## Install
 echo "Installing Brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Put brew on PATH for the rest of this script (Apple Silicon: /opt/homebrew, Intel: /usr/local)
+eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null || /usr/local/bin/brew shellenv)"
 brew analytics off
 
 ## Formulae
