@@ -185,6 +185,14 @@ clone_repo() {
 clone_repo https://github.com/mklingberg/dot-pi.git ~/.pi
 clone_repo https://github.com/mklingberg/dot-agents.git ~/.agents
 
+# Oh My Zsh + custom plugins (plugins list lives in zsh/custom.zsh)
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  # KEEP_ZSHRC keeps the ~/.zshrc symlink above; RUNZSH/CHSH stop it hijacking the script
+  RUNZSH=no CHSH=no KEEP_ZSHRC=yes ZSH="$HOME/.oh-my-zsh" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+clone_repo https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+clone_repo https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
 # Install Pi
 curl -fsSL https://pi.dev/install.sh | sh
 
