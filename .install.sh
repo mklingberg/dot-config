@@ -18,7 +18,7 @@ brew install wget
 brew install jq
 brew install sketchybar
 brew install gettext
-brew install oh-my-posh
+brew install starship
 brew install libyaml
 
 ### Development
