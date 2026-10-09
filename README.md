@@ -11,10 +11,10 @@ This repo is the part of my machine that actually matters: window management, st
 Fresh machine setup, start to finish:
 
 ```bash
-git clone https://github.com/mklingberg/dot-config.git ~/.config && ~/.config/.install.sh
+curl -fsSL https://raw.githubusercontent.com/mklingberg/dot-config/main/.install.sh | bash
 ```
 
-This clones the repo to `~/.config`, then runs `.install.sh`, which installs Homebrew + formulae/casks, applies macOS defaults, installs fonts, symlinks dotfiles into `$HOME`, and clones the related `dot-pi` and `dot-agents` repos.
+The script bootstraps itself: if `~/.config` isn't the repo yet, it installs the Command Line Tools if needed, moves any existing `~/.config` aside to `~/.config.bak-<timestamp>`, clones the repo there and re-runs itself. It then installs Homebrew + formulae/casks, applies macOS defaults, installs fonts, symlinks dotfiles into `$HOME`, and clones the related `dot-pi` and `dot-agents` repos.
 
 ## What defines the setup
 

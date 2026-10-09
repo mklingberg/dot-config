@@ -1,6 +1,31 @@
 #!/bin/bash
 set -euo pipefail
 
+# Bootstrap: clone dot-config to ~/.config and re-run from there.
+# Fresh machine: curl -fsSL https://raw.githubusercontent.com/mklingberg/dot-config/main/.install.sh | bash
+CONFIG_DIR="$HOME/.config"
+CONFIG_REPO="https://github.com/mklingberg/dot-config.git"
+
+if [ ! -d "$CONFIG_DIR/.git" ]; then
+  # git on a fresh Mac needs the Command Line Tools
+  if ! xcode-select -p >/dev/null 2>&1; then
+    echo "Installing Command Line Tools (finish the dialog)..."
+    xcode-select --install || true
+    until xcode-select -p >/dev/null 2>&1; do sleep 5; done
+  fi
+
+  if [ -e "$CONFIG_DIR" ]; then
+    backup="$CONFIG_DIR.bak-$(date +%Y%m%d%H%M%S)"
+    echo "Moving existing $CONFIG_DIR to $backup"
+    mv "$CONFIG_DIR" "$backup"
+  fi
+
+  echo "Cloning dot-config to $CONFIG_DIR..."
+  git clone "$CONFIG_REPO" "$CONFIG_DIR"
+  # stdin is the piped script under curl | bash; hand the terminal back for sudo prompts
+  exec "$CONFIG_DIR/.install.sh" </dev/tty
+fi
+
 # Homebrew
 
 ## Install
