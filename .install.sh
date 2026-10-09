@@ -43,6 +43,7 @@ brew install --cask bettermouse
 brew install --cask raycast
 brew install --cask spotify
 brew install --cask nikitabobko/tap/aerospace
+brew install --cask vishvavariya/notchy/notchy
 
 ### Terminals
 brew install --cask ghostty
