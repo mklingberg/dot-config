@@ -56,6 +56,8 @@ brew install azure-cli
 brew install podman
 brew install podman-compose
 brew install nvm
+brew install git-filter-repo
+brew install jsonnet
 
 ### Agent tools
 brew install rtk
@@ -93,6 +95,7 @@ brew install --cask font-jetbrains-mono
 brew install --cask font-jetbrains-mono-nerd-font
 brew install --cask font-fira-code
 brew install --cask font-fira-code-nerd-font
+brew install --cask font-meslo-lg-nerd-font
 
 ### Development
 brew install --cask dotnet-sdk
