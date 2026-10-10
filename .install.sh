@@ -185,6 +185,9 @@ clone_repo() {
 clone_repo https://github.com/mklingberg/dot-pi.git ~/.pi
 clone_repo https://github.com/mklingberg/dot-agents.git ~/.agents
 
+# Pi extension configs that must live outside ~/.pi; sources are tracked in dot-pi
+link ~/.pi/agent/rpiv-ask-user-question.json ~/.config/rpiv-ask-user-question/config.json
+
 # Oh My Zsh + custom plugins (plugins list lives in zsh/custom.zsh)
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   # KEEP_ZSHRC keeps the ~/.zshrc symlink above; RUNZSH/CHSH stop it hijacking the script
