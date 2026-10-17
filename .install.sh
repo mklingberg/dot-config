@@ -43,7 +43,6 @@ brew install git
 brew install gsl
 brew install wget
 brew install jq
-brew install sketchybar
 brew install gettext
 brew install starship
 brew install libyaml
@@ -158,7 +157,6 @@ git clone https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SF
 mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
 rm -rf /tmp/SFMono_Nerd_Font/
 
-curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.32/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
 
 # Create links to use .config (idempotent: skip if already linked)
 link() {

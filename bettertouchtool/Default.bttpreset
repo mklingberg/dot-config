@@ -162,7 +162,7 @@
     },
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
   },
-  "BTTPresetUUID" : "48EF9E4D-252D-4FD8-B35F-BFBA6924C558",
+  "BTTPresetUUID" : "C701640C-F51F-4C9F-833F-C56675C8B4A0",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -527,73 +527,6 @@
           "BTTAdditionalDataJSON" : {
             "BTTIconConfigIconHeight" : 25,
             "BTTIconConfigIconIconWidth" : 25
-          }
-        },
-        {
-          "BTTLastUpdatedAt" : 1740757451.2921319,
-          "BTTTriggerType" : 792,
-          "BTTTriggerTypeDescriptionReadOnly" : "Screen/Display Did Connect",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTUUID" : "8D536068-6C26-4245-9706-4A799A48CF91",
-          "BTTEnabled2" : 0,
-          "BTTOrder" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1740075161.9559031,
-              "BTTTriggerParentUUID" : "8D536068-6C26-4245-9706-4A799A48CF91",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "CA494176-B934-4727-9F09-692872C51DC6",
-              "BTTPredefinedActionType" : 206,
-              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
-              "BTTShellTaskActionScript" : "sleep 1.5;\n/opt/homebrew/bin/sketchybar --reload;\n/opt/homebrew/bin/sketchybar-2 --reload;",
-              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
-              "BTTOrder" : 34
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1739982481.652591,
-          "BTTTriggerType" : 624,
-          "BTTTriggerTypeDescriptionReadOnly" : "Please Select a Trigger ",
-          "BTTTriggerClass" : "BTTTriggerTypeKeySequence",
-          "BTTUUID" : "9433EF4D-E27C-434A-8355-E57D5F67C991",
-          "BTTEnabled" : 0,
-          "BTTOrder" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1739724703.0243101,
-              "BTTTriggerParentUUID" : "9433EF4D-E27C-434A-8355-E57D5F67C991",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "7A5E7ECF-C2F0-448E-B566-5F48A0C35779",
-              "BTTPredefinedActionType" : 206,
-              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
-              "BTTShellTaskActionScript" : "/opt/homebrew/bin/sketchybar --trigger set_visible;\n/opt/homebrew/bin/sketchybar-2 --trigger set_visible",
-              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
-              "BTTOrder" : 35
-            }
-          ],
-          "BTTKeySequence" : {
-            "BTTPauseBetween" : 0.29999999999999999,
-            "BTTKeyCount" : 1,
-            "BTTKeyboardType" : 2414,
-            "BTTKeySequenceDownKeys" : [
-              {
-                "BTTKEYCode" : 59,
-                "BTTKEYDown" : 1,
-                "BTTKEYOrderRelevant" : 1,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 761416448
-              }
-            ],
-            "BTTKeySequenceMixedKeys" : [
-              {
-                "BTTKEYCode" : 59,
-                "BTTKEYDown" : 1,
-                "BTTKEYOrderRelevant" : 1,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 761416448
-              }
-            ]
           }
         },
         {
@@ -1276,47 +1209,6 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1739982484.7324491,
-          "BTTTriggerType" : 624,
-          "BTTTriggerTypeDescriptionReadOnly" : "Please Select a Trigger ",
-          "BTTTriggerClass" : "BTTTriggerTypeKeySequence",
-          "BTTUUID" : "4723C839-8AB1-4BA7-A60F-4392BDD5AE8D",
-          "BTTEnabled" : 0,
-          "BTTOrder" : 1,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1739724981.101732,
-              "BTTTriggerParentUUID" : "4723C839-8AB1-4BA7-A60F-4392BDD5AE8D",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "A30AB99E-1663-4AE6-8B7E-40817036C765",
-              "BTTPredefinedActionType" : 206,
-              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
-              "BTTShellTaskActionScript" : "/opt/homebrew/bin/sketchybar --trigger set_hidden;\n/opt/homebrew/bin/sketchybar-2 --trigger set_hidden",
-              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
-              "BTTOrder" : 36
-            }
-          ],
-          "BTTKeySequence" : {
-            "BTTPauseBetween" : 0.29999999999999999,
-            "BTTKeyCount" : 1,
-            "BTTKeyboardType" : 2414,
-            "BTTKeySequenceMixedKeys" : [
-              {
-                "BTTKEYCode" : 59,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 761416576
-              }
-            ],
-            "BTTKeySequenceUpKeys" : [
-              {
-                "BTTKEYCode" : 59,
-                "BTTKEYRequired" : 1,
-                "BTTKEYTime" : 761416576
-              }
-            ]
-          }
-        },
-        {
           "BTTLastUpdatedAt" : 1731352455.3860512,
           "BTTTriggerType" : 630,
           "BTTTriggerTypeDescriptionReadOnly" : "Group",
@@ -1659,28 +1551,6 @@
             "BTTIconConfigIconHeight" : 25,
             "BTTIconConfigIconIconWidth" : 25
           }
-        },
-        {
-          "BTTLastUpdatedAt" : 1740757453.686429,
-          "BTTTriggerType" : 793,
-          "BTTTriggerTypeDescriptionReadOnly" : "Screen/Display Did Disconnect",
-          "BTTTriggerClass" : "BTTTriggerTypeOtherTriggers",
-          "BTTUUID" : "FE8E4BB5-31A4-4183-8CBD-B7D3E0AE15C7",
-          "BTTEnabled2" : 0,
-          "BTTOrder" : 1,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1740075185.6491299,
-              "BTTTriggerParentUUID" : "FE8E4BB5-31A4-4183-8CBD-B7D3E0AE15C7",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "A91EF8BC-F7A9-4F6F-BFBD-5A64D3D9F0A9",
-              "BTTPredefinedActionType" : 206,
-              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
-              "BTTShellTaskActionScript" : "sleep 1.5;\n/opt/homebrew/bin/sketchybar --reload;\n/opt/homebrew/bin/sketchybar-2 --reload;",
-              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
-              "BTTOrder" : 35
-            }
-          ]
         },
         {
           "BTTLastUpdatedAt" : 1776974244.5200739,

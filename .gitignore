@@ -8,8 +8,6 @@
 !git/**/*
 !_archive
 !_archive/**/*
-!sketchybar
-!sketchybar/**/*
 !zsh
 !zsh/**/*
 !ghostty

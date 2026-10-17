@@ -149,7 +149,6 @@ automatically-unhide-macos-hidden-apps = false
     m = ['mode main', 'macos-native-fullscreen']
     z = ['exec-and-forget pmset sleepnow', 'mode main']
     backspace = ['close-all-windows-but-current', 'mode main']
-    s = ['exec-and-forget sketchybar --reload', 'mode main']
 
     left = 'focus left --boundaries all-monitors-outer-frame'
     down = 'focus down --boundaries all-monitors-outer-frame'
