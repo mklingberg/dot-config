@@ -69,16 +69,16 @@ automatically-unhide-macos-hidden-apps = false
 
 # Modifier model
 #   Hyper = Caps Lock via BTT (ctrl-alt-cmd, shift NOT included)
-#   hyper          go: focus (hjkl), workspace, layout
-#   hyper-shift    take the window along: move (hjkl), send to workspace/monitor
-#   hyper-shift-, / .  group (join) with previous / next neighbour
-# Focus/move use hjkl under hyper (arrows don't work with BTT hyper+shift); plain ctrl-hjkl stays free for shell/pi/editors.
+#   hyper          go: focus (hjkl), workspace, fullscreen
+#   hyper-shift    take the window along: move (hjkl), send to workspace
+#   hyper-esc      service ('arrange') mode for everything else — sticky, no modifiers
+# hjkl rather than arrows: BTT's hyper drops shift on arrow keys. Plain ctrl-hjkl stays free.
 # Avoid: hyper-v / hyper-c (Vorssaint clipboard / color picker), hyper-shift-s (Vorssaint screenshot),
 #        hyper-8 (macOS invert colors).
 # BTT gestures call the aerospace CLI directly with matching modifiers.
 [mode.main.binding]
 
-    # Focus / move — hjkl, not arrows: BTT's hyper drops shift on arrow keys
+    # Focus / move
     ctrl-alt-cmd-h = 'focus left --boundaries all-monitors-outer-frame'
     ctrl-alt-cmd-j = 'focus down --boundaries all-monitors-outer-frame'
     ctrl-alt-cmd-k = 'focus up --boundaries all-monitors-outer-frame'
@@ -87,11 +87,6 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-cmd-shift-j = 'move down --boundaries all-monitors-outer-frame'
     ctrl-alt-cmd-shift-k = 'move up --boundaries all-monitors-outer-frame'
     ctrl-alt-cmd-shift-l = 'move right --boundaries all-monitors-outer-frame'
-
-    # Group: start a stack with the next/previous neighbour (row → right/left, column → down/up).
-    # Once grouped, plain move (hyper-shift-hjkl) moves windows in/out of the stack.
-    ctrl-alt-cmd-shift-period = 'exec-and-forget /opt/homebrew/bin/aerospace join-with right || /opt/homebrew/bin/aerospace join-with down'
-    ctrl-alt-cmd-shift-comma = 'exec-and-forget /opt/homebrew/bin/aerospace join-with left || /opt/homebrew/bin/aerospace join-with up'
 
     # Workspaces
     ctrl-alt-cmd-1 = 'workspace 1'
@@ -118,52 +113,60 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-cmd-shift-p = 'move-node-to-workspace prev --wrap-around'
     ctrl-alt-cmd-tab = 'workspace-back-and-forth'
 
-    # Monitors
-    ctrl-alt-cmd-o = 'move-workspace-to-monitor --wrap-around next'
-    ctrl-alt-cmd-shift-o = 'move-node-to-monitor --wrap-around next'
-
-    # Layout
     ctrl-alt-cmd-f = 'fullscreen'
-    ctrl-alt-cmd-shift-f = 'macos-native-fullscreen'
-    ctrl-alt-cmd-t = 'layout floating tiling'
-    ctrl-alt-cmd-comma = 'layout accordion tiles'
-    ctrl-alt-cmd-period = 'layout horizontal vertical'
-    ctrl-alt-cmd-b = 'balance-sizes'
-
-    # Resize — trialling both pairs, drop the loser later
-    ctrl-alt-cmd-a = 'resize smart +140'      # one hand
-    ctrl-alt-cmd-z = 'resize smart -140'
-    ctrl-alt-cmd-minus = 'resize smart +140'  # Swedish '+' key
-    ctrl-alt-cmd-slash = 'resize smart -140'  # Swedish '-' key
-
     ctrl-alt-cmd-esc = 'mode service'
 
-# Service mode: hyper-esc to enter; esc/space to leave
-[mode.service.binding]
-    esc = ['mode main']
-    space = ['mode main']
-    r = ['reload-config', 'mode main']
-    f = ['flatten-workspace-tree', 'mode main'] # reset layout
-    t = ['layout floating tiling', 'mode main']
-    b = ['balance-sizes', 'mode main']
-    m = ['mode main', 'macos-native-fullscreen']
-    z = ['exec-and-forget pmset sleepnow', 'mode main']
-    backspace = ['close-all-windows-but-current', 'mode main']
 
+# Service ('arrange') mode: hyper-esc to enter; esc/space/enter to leave.
+# Sticky: arrange keys stay in the mode so they can be repeated. One-shots exit by themselves.
+[mode.service.binding]
+    esc = 'mode main'
+    space = 'mode main'
+    enter = 'mode main'
+
+    # Focus / move
+    h = 'focus left --boundaries all-monitors-outer-frame'
+    j = 'focus down --boundaries all-monitors-outer-frame'
+    k = 'focus up --boundaries all-monitors-outer-frame'
+    l = 'focus right --boundaries all-monitors-outer-frame'
     left = 'focus left --boundaries all-monitors-outer-frame'
     down = 'focus down --boundaries all-monitors-outer-frame'
     up = 'focus up --boundaries all-monitors-outer-frame'
     right = 'focus right --boundaries all-monitors-outer-frame'
-
+    shift-h = 'move left --boundaries all-monitors-outer-frame'
+    shift-j = 'move down --boundaries all-monitors-outer-frame'
+    shift-k = 'move up --boundaries all-monitors-outer-frame'
+    shift-l = 'move right --boundaries all-monitors-outer-frame'
     shift-left = 'move left --boundaries all-monitors-outer-frame'
     shift-down = 'move down --boundaries all-monitors-outer-frame'
     shift-up = 'move up --boundaries all-monitors-outer-frame'
     shift-right = 'move right --boundaries all-monitors-outer-frame'
 
-    alt-left = ['join-with left', 'mode main']
-    alt-down = ['join-with down', 'mode main']
-    alt-up = ['join-with up', 'mode main']
-    alt-right = ['join-with right', 'mode main']
+    # Group with previous / next neighbour (row → left/right, column → up/down)
+    comma = 'exec-and-forget /opt/homebrew/bin/aerospace join-with left || /opt/homebrew/bin/aerospace join-with up'
+    period = 'exec-and-forget /opt/homebrew/bin/aerospace join-with right || /opt/homebrew/bin/aerospace join-with down'
+
+    # Resize
+    a = 'resize smart +140'
+    z = 'resize smart -140'
+    minus = 'resize smart +140'  # Swedish '+' key
+    slash = 'resize smart -140'  # Swedish '-' key
+    b = 'balance-sizes'
+
+    # Layout
+    s = 'layout accordion tiles'       # stack
+    v = 'layout horizontal vertical'
+    t = 'layout floating tiling'
+
+    # Monitors
+    o = 'move-node-to-monitor --wrap-around next'
+    shift-o = 'move-workspace-to-monitor --wrap-around next'
+
+    # One-shots (exit the mode)
+    r = ['reload-config', 'mode main']
+    f = ['flatten-workspace-tree', 'mode main']  # reset layout
+    m = ['mode main', 'macos-native-fullscreen']
+    backspace = ['close-all-windows-but-current', 'mode main']
 
 
 [workspace-to-monitor-force-assignment]
