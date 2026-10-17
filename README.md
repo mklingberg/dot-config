@@ -76,14 +76,16 @@ Config:
 - `vscode/settings.json`
 - `vscode/keybindings.json`
 
-### Tinycast + Vorssaint
-Tinycast is the launcher (Raycast replacement); Vorssaint covers menu bar metrics, notch, clipboard history and the app switcher.
+### App settings: Tinycast, Vorssaint, BetterMouse, BetterTouchTool
+Tinycast is the launcher (Raycast replacement); Vorssaint covers menu bar metrics, notch, clipboard history and the app switcher. BetterMouse and BetterTouchTool handle mouse and trigger/gesture config.
 
-Both keep settings in `~/Library/Preferences`, which can't be symlinked, so `app-prefs.sh` exports them with per-machine state (usage stats, window positions, onboarding flags) stripped, and merges them back on import.
+Plists in `~/Library/Preferences` can't be symlinked, so `app-prefs.sh` exports them with per-machine state (usage stats, window positions, onboarding flags) stripped, and merges them back on import. BetterMouse is allowlisted to its config keys (keeps the license out) with nested plists decoded for readable diffs. BetterTouchTool goes through its AppleScript preset export/import (`Default` preset, general settings included).
 
 Config:
 - `tinycast/com.tinycast.app.plist`
 - `vorssaint/com.vorssaint.utils.plist`
+- `bettermouse/com.naotanhaocan.BetterMouse.plist`
+- `bettertouchtool/Default.bttpreset`
 
 Usage:
 ```bash

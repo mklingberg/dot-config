@@ -12,10 +12,15 @@ CONFIG_DIR="$(cd "$(dirname "$0")" && pwd)"
 DEFAULTS_APPS=(
   "tinycast com.tinycast.app Tinycast"
   "vorssaint com.vorssaint.utils Vorssaint"
+  # Allowlist keeps the Paddle license key out of git
+  "bettermouse com.naotanhaocan.BetterMouse BetterMouse appitems,config,ee,keyboards,logikeys,mice"
 )
 
 # Usage stats, window/display state, bookmarks, onboarding/migration flags: per-machine churn
 VOLATILE='^(NS|Apple)|Bookmark$|Habit|Usage|LastCheck|LastCount|NotifiedIDs|[Vv]ersion$|Migrated$|Applied$|Onboard|onboarding|Initialized$|Installed$|Rechecked$|PromptState$|^palette(Position|ExpandedCenterDisplays)$|^settingsWindow|^screenshotLast|LastZoom$|^panel(Collapsed|Control)|^shelfItems$'
+
+BTT_PRESET="Default"
+BTT_FILE="$CONFIG_DIR/bettertouchtool/$BTT_PRESET.bttpreset"
 
 py() { /usr/bin/python3 -I -c "$@"; }
 
@@ -72,12 +77,26 @@ sys.stdout.buffer.write(plistlib.dumps(prefs))
   if $was_running; then open -a "$name"; fi
 }
 
+# BetterTouchTool keeps triggers in its own database; its AppleScript preset export/import is the supported route
+export_btt() {
+  mkdir -p "$(dirname "$BTT_FILE")"
+  osascript -e "tell application \"BetterTouchTool\" to export_preset \"$BTT_PRESET\" outputPath \"$BTT_FILE\" compress false includeSettings true" >/dev/null
+  echo "Exported BetterTouchTool preset $BTT_PRESET -> bettertouchtool/$BTT_PRESET.bttpreset"
+}
+
+import_btt() {
+  [ -f "$BTT_FILE" ] || { echo "Skipping BetterTouchTool (no bettertouchtool/$BTT_PRESET.bttpreset)"; return; }
+  osascript -e "tell application \"BetterTouchTool\" to import_preset \"$BTT_FILE\"" >/dev/null
+  echo "Imported bettertouchtool/$BTT_PRESET.bttpreset -> BetterTouchTool"
+}
+
 case "${1:-}" in
   export|import)
     for app in "${DEFAULTS_APPS[@]}"; do
       read -r dir domain name allow <<< "$app"
       "${1}_defaults" "$dir" "$domain" "$name" "${allow:-}"
     done
+    "${1}_btt"
     ;;
   *)
     echo "Usage: $0 export|import" >&2
