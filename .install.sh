@@ -73,6 +73,7 @@ brew install --cask abue-ammar/tinycast/tinycast
 brew install --cask spotify
 brew install --cask nikitabobko/tap/aerospace
 brew install --cask vorssaint
+brew install --cask caskhub
 
 ### Terminals
 brew install --cask ghostty
