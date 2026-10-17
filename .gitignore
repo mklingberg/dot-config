@@ -24,8 +24,6 @@
 !bm_cfg.plist
 !secrets
 !secrets/**/*
-!tinycast
-!tinycast/**/*
 
 # Regenerated at every login - no secret material, but pure churn
 secrets/*.log
