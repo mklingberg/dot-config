@@ -9,36 +9,12 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-after-startup-command = [
-    #'exec-and-forget sketchybar',
-    #'exec-and-forget sketchybar-2',
-    #'exec-and-forget sketchybar-3'
-]
+after-startup-command = []
 
 # Start AeroSpace at login
 start-at-login = true
 
-# Notify Sketchybar about workspace change
-
-# on-focus-changed = [
-#    'exec-and-forget sketchybar --trigger aerospace_workspace_change "FOCUSED_WORKSPACE=$(list-workspaces --focused) FOCUSED_WORKSPACE_WINDOWS=$(list-windows --workspace $AEROSPACE_FOCUSED_WORKSPACE --format "%{monitor-id}|%{workspace}|%{app-name}")"',
-#    'exec-and-forget sketchybar-2 --trigger aerospace_workspace_change "FOCUSED_WORKSPACE=$(list-workspaces --focused) FOCUSED_WORKSPACE_WINDOWS=$(list-windows --workspace $AEROSPACE_FOCUSED_WORKSPACE --format "%{monitor-id}|%{workspace}|%{app-name}")"'
-# ]
-
-# on-focus-changed = [
-#    'exec-and-forget sketchybar --trigger aerospace_workspace_change "FOCUSED_WORKSPACE=$(list-workspaces --focused)"',
-# ]
-
-exec-on-workspace-change = [
-    #'/bin/bash', 
-    #'-c',
-    #'''
-    #FOCUSED_MONITOR=$(aerospace list-monitors --focused --format "%{monitor-id}" | xargs);
-    #sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    #sketchybar-2 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    #sketchybar-3 --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE FOCUSED_MONITOR=$FOCUSED_MONITOR;
-    #'''
-]
+exec-on-workspace-change = []
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -58,7 +34,7 @@ default-root-container-layout = 'tiles'
 default-root-container-orientation = 'auto'
 
 # Mouse follows focus when focused monitor changes
-# Drop it from your config, if you don't like this behavior
+# Drop it fr                om your config, if you don't like this behavior
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
@@ -88,7 +64,7 @@ automatically-unhide-macos-hidden-apps = false
     inner.vertical =   10
     outer.left =       10
     outer.bottom =     10
-    outer.top =        [{ monitor.'^built-in retina display$' = 0 }, 0]
+    outer.top =        [{ monitor.'^built-in retina display$' = 8 }, 6]
     outer.right =      10
 
 # 'main' binding mode declaration
@@ -206,7 +182,6 @@ automatically-unhide-macos-hidden-apps = false
 
     # Go to sleep
     cmd-ctrl-s = 'exec-and-forget pmset sleepnow'
-    cmd-ctrl-r = ['exec-and-forget sketchybar --reload']
 
 
 # 'service' binding mode declaration.
