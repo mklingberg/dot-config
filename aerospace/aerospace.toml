@@ -67,158 +67,105 @@ automatically-unhide-macos-hidden-apps = false
     outer.top =        [{ monitor.'^built-in retina display$' = 8 }, 6]
     outer.right =      10
 
-# 'main' binding mode declaration
-# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-# 'main' binding mode must be always presented
-# Fallback value (if you omit the key): mode.main.binding = {}
+# Modifier model
+#   Hyper = Caps Lock via BTT (ctrl-alt-cmd, shift NOT included)
+#   hyper          go: focus (hjkl), workspace, layout
+#   hyper-shift    take the window along: move (hjkl), send to workspace/monitor
+#   hyper-shift-, / .  group (join) with previous / next neighbour
+# Focus/move use hjkl under hyper (arrows don't work with BTT hyper+shift); plain ctrl-hjkl stays free for shell/pi/editors.
+# Avoid: hyper-v / hyper-c (Vorssaint clipboard / color picker), hyper-shift-s (Vorssaint screenshot),
+#        hyper-8 (macOS invert colors).
+# BTT gestures call the aerospace CLI directly with matching modifiers.
 [mode.main.binding]
 
-    # All possible keys:
-    # - Letters.        a, b, c, ..., z
-    # - Numbers.        0, 1, 2, ..., 9
-    # - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
-    # - F-keys.         f1, f2, ..., f20
-    # - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon,
-    #                   backtick, leftSquareBracket, rightSquareBracket, space, enter, esc,
-    #                   backspace, tab
-    # - Keypad special. keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
-    #                   keypadMinus, keypadMultiply, keypadPlus
-    # - Arrows.         left, down, up, right
+    # Focus / move — hjkl, not arrows: BTT's hyper drops shift on arrow keys
+    ctrl-alt-cmd-h = 'focus left --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-j = 'focus down --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-k = 'focus up --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-l = 'focus right --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-shift-h = 'move left --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-shift-j = 'move down --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-shift-k = 'move up --boundaries all-monitors-outer-frame'
+    ctrl-alt-cmd-shift-l = 'move right --boundaries all-monitors-outer-frame'
 
-    # All possible modifiers: cmd, alt, ctrl, shift
+    # Group: start a stack with the next/previous neighbour (row → right/left, column → down/up).
+    # Once grouped, plain move (hyper-shift-hjkl) moves windows in/out of the stack.
+    ctrl-alt-cmd-shift-period = 'exec-and-forget /opt/homebrew/bin/aerospace join-with right || /opt/homebrew/bin/aerospace join-with down'
+    ctrl-alt-cmd-shift-comma = 'exec-and-forget /opt/homebrew/bin/aerospace join-with left || /opt/homebrew/bin/aerospace join-with up'
 
-    # All possible commands: https://nikitabobko.github.io/AeroSpace/commands
+    # Workspaces
+    ctrl-alt-cmd-1 = 'workspace 1'
+    ctrl-alt-cmd-2 = 'workspace 2'
+    ctrl-alt-cmd-3 = 'workspace 3'
+    ctrl-alt-cmd-4 = 'workspace 4'
+    ctrl-alt-cmd-5 = 'workspace 5'
+    ctrl-alt-cmd-6 = 'workspace 6'
+    ctrl-alt-cmd-7 = 'workspace 7'
+    ctrl-alt-cmd-8 = 'workspace 8'
+    ctrl-alt-cmd-9 = 'workspace 9'
+    ctrl-alt-cmd-shift-1 = 'move-node-to-workspace 1'
+    ctrl-alt-cmd-shift-2 = 'move-node-to-workspace 2'
+    ctrl-alt-cmd-shift-3 = 'move-node-to-workspace 3'
+    ctrl-alt-cmd-shift-4 = 'move-node-to-workspace 4'
+    ctrl-alt-cmd-shift-5 = 'move-node-to-workspace 5'
+    ctrl-alt-cmd-shift-6 = 'move-node-to-workspace 6'
+    ctrl-alt-cmd-shift-7 = 'move-node-to-workspace 7'
+    ctrl-alt-cmd-shift-8 = 'move-node-to-workspace 8'
+    ctrl-alt-cmd-shift-9 = 'move-node-to-workspace 9'
+    ctrl-alt-cmd-n = 'workspace next --wrap-around'
+    ctrl-alt-cmd-p = 'workspace prev --wrap-around'
+    ctrl-alt-cmd-shift-n = 'move-node-to-workspace next --wrap-around'
+    ctrl-alt-cmd-shift-p = 'move-node-to-workspace prev --wrap-around'
+    ctrl-alt-cmd-tab = 'workspace-back-and-forth'
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
-    # You can uncomment the foHllowing lines to open up terminal with alt + enter shortcut
-    # (like in i3)
-    # alt-enter = '''exec-and-forget osascript -e '
-    # tell application "Terminal"               
-    #     do script
-    #     activate
-    # end tell'
-    # '''
+    # Monitors
+    ctrl-alt-cmd-o = 'move-workspace-to-monitor --wrap-around next'
+    ctrl-alt-cmd-shift-o = 'move-node-to-monitor --wrap-around next'
 
-    ctrl-tab = 'workspace next --wrap-around'
-    ctrl-shift-tab = 'workspace prev --wrap-around'
+    # Layout
+    ctrl-alt-cmd-f = 'fullscreen'
+    ctrl-alt-cmd-shift-f = 'macos-native-fullscreen'
+    ctrl-alt-cmd-t = 'layout floating tiling'
+    ctrl-alt-cmd-comma = 'layout accordion tiles'
+    ctrl-alt-cmd-period = 'layout horizontal vertical'
+    ctrl-alt-cmd-b = 'balance-sizes'
 
-    ctrl-t = 'layout floating tiling'
+    # Resize — trialling both pairs, drop the loser later
+    ctrl-alt-cmd-a = 'resize smart +140'      # one hand
+    ctrl-alt-cmd-z = 'resize smart -140'
+    ctrl-alt-cmd-minus = 'resize smart +140'  # Swedish '+' key
+    ctrl-alt-cmd-slash = 'resize smart -140'  # Swedish '-' key
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    ctrl-period = 'layout horizontal vertical'
-    ctrl-comma = 'layout accordion tiles'
+    ctrl-alt-cmd-esc = 'mode service'
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    ctrl-h = 'focus left --boundaries all-monitors-outer-frame' # --boundaries all-monitors-outer-frame
-    ctrl-j = 'focus down --boundaries all-monitors-outer-frame' # --boundaries all-monitors-outer-frame
-    ctrl-k = 'focus up --boundaries all-monitors-outer-frame' # --boundaries all-monitors-outer-frame
-    ctrl-l = 'focus right --boundaries all-monitors-outer-frame' # --boundaries all-monitors-outer-frame
-    ctrl-left = 'focus left --boundaries all-monitors-outer-frame'
-    ctrl-down = 'focus down --boundaries all-monitors-outer-frame'
-    ctrl-up = 'focus up --boundaries all-monitors-outer-frame'
-    ctrl-right = 'focus right --boundaries all-monitors-outer-frame'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#fullscreenj
-    ctrl-m = 'fullscreen'
-    ctrl-shift-m = 'macos-native-fullscreen'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    ctrl-shift-h = 'move left --boundaries all-monitors-outer-frame'
-    ctrl-shift-j = 'move down --boundaries all-monitors-outer-frame'
-    ctrl-shift-k = 'move up --boundaries all-monitors-outer-frame'
-    ctrl-shift-l = 'move right --boundaries all-monitors-outer-frame'
-    ctrl-shift-left = 'move left --boundaries all-monitors-outer-frame'
-    ctrl-shift-down = 'move down --boundaries all-monitors-outer-frame'
-    ctrl-shift-up = 'move up --boundaries all-monitors-outer-frame'
-    ctrl-shift-right = 'move right --boundaries all-monitors-outer-frame'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#join-with
-    ctrl-shift-alt-h = 'join-with left'
-    ctrl-shift-alt-j = 'join-with down'
-    ctrl-shift-alt-k = 'join-with up'
-    ctrl-shift-alt-l = 'join-with right'
-    ctrl-shift-alt-down = 'join-with down'
-    ctrl-shift-alt-up = 'join-with up'
-    ctrl-shift-alt-right = 'join-with right'
-    ctrl-shift-alt-left = 'join-with left'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-    ctrl-shift-a = 'resize smart +140'
-    ctrl-shift-z = 'resize smart -140'
-    #ctrl-shift-alt-up = 'resize smart +140'
-    #ctrl-shift-alt-down = 'resize smart -140'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    ctrl-1 = 'workspace 1'
-    ctrl-2 = 'workspace 2'
-    ctrl-3 = 'workspace 3'
-    ctrl-4 = 'workspace 4'
-    ctrl-5 = 'workspace 5'
-    ctrl-6 = 'workspace 6'
-    ctrl-7 = 'workspace 7'
-    ctrl-8 = 'workspace 8'
-    ctrl-9 = 'workspace 9'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    ctrl-shift-1 = ['move-node-to-workspace 1']
-    ctrl-shift-2 = ['move-node-to-workspace 2']
-    ctrl-shift-3 = ['move-node-to-workspace 3']
-    ctrl-shift-4 = ['move-node-to-workspace 4']
-    ctrl-shift-5 = ['move-node-to-workspace 5']
-    ctrl-shift-6 = ['move-node-to-workspace 6']
-    ctrl-shift-7 = ['move-node-to-workspace 7']
-    ctrl-shift-8 = ['move-node-to-workspace 8']
-    ctrl-shift-9 = ['move-node-to-workspace 9']
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-    #alt-tab = 'workspace-back-and-forth'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-    #alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    #ctrl-shift-s = 'mode service'
-    #ctrl-shift-s = 'exec-and-forget sketchybar-3 --trigger toggle_hidden'
-
-    # Go to sleep
-    cmd-ctrl-s = 'exec-and-forget pmset sleepnow'
-
-
-# 'service' binding mode declaration.
-# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
+# Service mode: hyper-esc to enter; esc/space to leave
 [mode.service.binding]
     esc = ['mode main']
     space = ['mode main']
     r = ['reload-config', 'mode main']
     f = ['flatten-workspace-tree', 'mode main'] # reset layout
-    t = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+    t = ['layout floating tiling', 'mode main']
+    b = ['balance-sizes', 'mode main']
+    m = ['mode main', 'macos-native-fullscreen']
+    z = ['exec-and-forget pmset sleepnow', 'mode main']
     backspace = ['close-all-windows-but-current', 'mode main']
+    s = ['exec-and-forget sketchybar --reload', 'mode main']
 
-    # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-    #s = ['layout sticky tiling', 'mode main']
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    
     left = 'focus left --boundaries all-monitors-outer-frame'
     down = 'focus down --boundaries all-monitors-outer-frame'
     up = 'focus up --boundaries all-monitors-outer-frame'
     right = 'focus right --boundaries all-monitors-outer-frame'
 
-    cmd-left = 'move left'
-    cmd-down = 'move down'
-    cmd-up = 'move up'
-    cmd-right = 'move right'
+    shift-left = 'move left --boundaries all-monitors-outer-frame'
+    shift-down = 'move down --boundaries all-monitors-outer-frame'
+    shift-up = 'move up --boundaries all-monitors-outer-frame'
+    shift-right = 'move right --boundaries all-monitors-outer-frame'
 
-    cmd-shift-left = ['join-with left', 'mode main']
-    cmd-shift-down = ['join-with down', 'mode main']
-    cmd-shift-up = ['join-with up', 'mode main']
-    cmd-shift-right = ['join-with right', 'mode main']
+    alt-left = ['join-with left', 'mode main']
+    alt-down = ['join-with down', 'mode main']
+    alt-up = ['join-with up', 'mode main']
+    alt-right = ['join-with right', 'mode main']
 
-    # See: https://nikitabobko.github.io/AeroSpace/commands#balance-sizes
-    b = ['balance-sizes', 'mode main']
-
-    s = ['exec-and-forget sketchybar --reload', 'mode main']
-    #cmd-s = ['exec-and-forget sketchybar-2 --reload', 'mode main']
 
 [workspace-to-monitor-force-assignment]
     1 = ['dell','hdr 4k','main']
