@@ -44,7 +44,7 @@
     "BTTTouchBarVisible" : false,
     "BSTDontShowSnapAreasWhileModMoving" : 0,
     "BTTDrawingAreaHeight" : 626,
-    "BTTNumberOfStarts" : 218,
+    "BTTNumberOfStarts" : 219,
     "BTTTouchBarHapticFeedback" : 0,
     "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
     "showKeyboardTab" : true,
@@ -99,6 +99,7 @@
     "BTTForceNormalClickPressure3F" : 150,
     "BTTNotchBarStandardWidgetModeHideRightFixed" : false,
     "BTTTouchBarSupportEnabled" : false,
+    "BTTURLCleanerAutoClean" : true,
     "BTTForceForceClickPressure2F" : 700,
     "useAppleRemotePlugin" : false,
     "BTRMouseSpeed" : 1,
@@ -138,7 +139,7 @@
     "BTTDrawingsRestoreMousePosition" : true,
     "singleFingerTapRight" : 0.050000000000000003,
     "singleFingerTapLeft" : 0.45000000000000001,
-    "BTTDidRegisterForUpdateStats" : "6.885",
+    "BTTDidRegisterForUpdateStats" : "6.944",
     "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
     "BSTBrokenAPICheckEnabled" : false,
     "BTTDrawingsHighlightStartPoint" : true,
@@ -161,7 +162,7 @@
     },
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
   },
-  "BTTPresetUUID" : "FFD66C6A-4E2E-44CC-A243-5146908CDAF3",
+  "BTTPresetUUID" : "48EF9E4D-252D-4FD8-B35F-BFBA6924C558",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -181,50 +182,56 @@
           "BTTOrder" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1731961923.8701401,
+              "BTTLastUpdatedAt" : 1792270327.116775,
               "BTTTriggerType" : 4,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
               "BTTTriggerTypeDescription" : "Toggle window docked state",
               "BTTTriggerParentUUID" : "8343F9E7-D553-484E-A6DF-172F9325C5DE",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "E417708B-76B7-4E66-968D-3EE3604D5D80",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 0,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731257000.1402879,
+                  "BTTLastUpdatedAt" : 1792269228.0947199,
                   "BTTTriggerParentUUID" : "E417708B-76B7-4E66-968D-3EE3604D5D80",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "5668864B-969A-4AFB-8535-CAFB829188EF",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "t",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout floating tiling",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,17",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 10
                 }
               ],
               "BTTGestureNotes" : "Toggle window docked state"
             },
             {
-              "BTTLastUpdatedAt" : 1731961928.636214,
+              "BTTLastUpdatedAt" : 1792270327.902679,
               "BTTTriggerType" : 1,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Tap",
               "BTTTriggerTypeDescription" : "Maximise window",
               "BTTTriggerParentUUID" : "8343F9E7-D553-484E-A6DF-172F9325C5DE",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "60710370-C338-487B-85A4-DC77A7A7EB60",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 1,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731961098.4657331,
+                  "BTTLastUpdatedAt" : 1792269229.3692031,
                   "BTTTriggerParentUUID" : "60710370-C338-487B-85A4-DC77A7A7EB60",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "97BF0CB1-AC36-4356-A15B-D4D1362D2659",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "m",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace fullscreen",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,46",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 12
                 }
               ],
@@ -244,93 +251,105 @@
               "BTTGestureNotes" : "Movement"
             },
             {
-              "BTTLastUpdatedAt" : 1732724072.724134,
+              "BTTLastUpdatedAt" : 1792273330.143867,
               "BTTTriggerType" : 5,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Left",
               "BTTTriggerParentUUID" : "8343F9E7-D553-484E-A6DF-172F9325C5DE",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "F979CC40-6441-4D82-86A8-CF59D85368C1",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 3,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1732724023.131707,
+                  "BTTLastUpdatedAt" : 1792269232.089514,
                   "BTTTriggerParentUUID" : "F979CC40-6441-4D82-86A8-CF59D85368C1",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "AE9D85E0-454C-45F6-9649-9D8DCCDEC5AB",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "h",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move left --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,4",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 8
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1732724080.149272,
+              "BTTLastUpdatedAt" : 1792273330.331614,
               "BTTTriggerType" : 6,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Right",
               "BTTTriggerParentUUID" : "8343F9E7-D553-484E-A6DF-172F9325C5DE",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "AC66B5DB-174B-4679-A749-AF33D8E008B7",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 4,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1732724032.444716,
+                  "BTTLastUpdatedAt" : 1792269232.45298,
                   "BTTTriggerParentUUID" : "AC66B5DB-174B-4679-A749-AF33D8E008B7",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "B8A9904C-6987-4C96-B88D-7857C3D06DAD",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "l",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move right --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,37",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 7
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1732724085.3436642,
+              "BTTLastUpdatedAt" : 1792273330.7037821,
               "BTTTriggerType" : 8,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Down",
               "BTTTriggerParentUUID" : "8343F9E7-D553-484E-A6DF-172F9325C5DE",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "B28EE323-E16E-4313-A0C4-EA5F889A1FCC",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 5,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1732724040.579031,
+                  "BTTLastUpdatedAt" : 1792269233.3653359,
                   "BTTTriggerParentUUID" : "B28EE323-E16E-4313-A0C4-EA5F889A1FCC",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "DEDCB776-459D-4751-893E-38E9EC394977",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "j",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,38",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 9
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1732724090.349669,
+              "BTTLastUpdatedAt" : 1792273331.081562,
               "BTTTriggerType" : 7,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Up",
               "BTTTriggerParentUUID" : "8343F9E7-D553-484E-A6DF-172F9325C5DE",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "8FD2C39B-CCDC-40C7-8D1E-B0F2790C2391",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 6,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1732724045.964262,
+                  "BTTLastUpdatedAt" : 1792269233.9036109,
                   "BTTTriggerParentUUID" : "8FD2C39B-CCDC-40C7-8D1E-B0F2790C2391",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "2845D5D7-E918-4FC1-A218-7D69E1831674",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "k",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,40",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 10
                 }
               ]
@@ -578,7 +597,7 @@
           }
         },
         {
-          "BTTLastUpdatedAt" : 1756915206.3810301,
+          "BTTLastUpdatedAt" : 1792269082.034909,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "A82FB03D-83D6-44DC-9D77-26D8AE0001C3",
@@ -593,14 +612,17 @@
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1756915171.547555,
+              "BTTLastUpdatedAt" : 1792269228.465513,
               "BTTTriggerParentUUID" : "A82FB03D-83D6-44DC-9D77-26D8AE0001C3",
               "BTTIsPureAction" : true,
               "BTTUUID" : "C402810F-C9C1-432D-8671-1A9512F3A772",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : "a",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace resize smart +140",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "62,56,0",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 37
             }
           ]
@@ -615,47 +637,53 @@
           "BTTOrder" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1757181642.1078229,
+              "BTTLastUpdatedAt" : 1792270327.533056,
               "BTTTriggerType" : 179,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Double-Tap",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "B1699105-ABB4-4651-95E3-AF85765FB62E",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 0,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738782548.640033,
+                  "BTTLastUpdatedAt" : 1792269229.0061841,
                   "BTTTriggerParentUUID" : "B1699105-ABB4-4651-95E3-AF85765FB62E",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "6D66918C-B877-4F3D-B233-DBB0C2C5FF7C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "t",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout floating tiling",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,17",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 16
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1077871,
+              "BTTLastUpdatedAt" : 1792270328.0865169,
               "BTTTriggerType" : 173,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Tap",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "9ACA81C9-4205-4F02-8EF0-7BDA3FB0D630",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 1,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738782557.9572999,
+                  "BTTLastUpdatedAt" : 1792269230.4488339,
                   "BTTTriggerParentUUID" : "9ACA81C9-4205-4F02-8EF0-7BDA3FB0D630",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "AC0424F8-8100-4E31-B0A8-3359B8AA5322",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "m",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace fullscreen",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,46",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 16
                 }
               ]
@@ -672,14 +700,17 @@
               "BTTOrder" : 2,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1756326676.5984159,
+                  "BTTLastUpdatedAt" : 1792269231.3615999,
                   "BTTTriggerParentUUID" : "075DB5A8-2BEE-4467-A0A5-63F3A1699E77",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "A318AEE6-E15B-49C2-A464-89146C88F022",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : ",",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout accordion tiles",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,43",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 17
                 }
               ]
@@ -696,14 +727,17 @@
               "BTTOrder" : 3,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1756325947.814997,
+                  "BTTLastUpdatedAt" : 1792269232.270483,
                   "BTTTriggerParentUUID" : "4EEE2572-BDBF-43E2-8C5E-92DCED0747ED",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "87003D74-C45C-4C23-A6AC-B0F662A98DE6",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : ".",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout horizontal vertical",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,47",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 18
                 }
               ]
@@ -722,51 +756,55 @@
               "BTTGestureNotes" : "Size"
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1074891,
+              "BTTLastUpdatedAt" : 1792270329.533051,
               "BTTTriggerType" : 116,
               "BTTTriggerTypeDescriptionReadOnly" : "Pinch Out",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "9303601B-E2A5-41FA-8B37-CDCD57ACE8AC",
               "BTTRepeatRate" : 2,
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 524288,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 5,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1756481061.391427,
+                  "BTTLastUpdatedAt" : 1792269233.0011649,
                   "BTTTriggerParentUUID" : "9303601B-E2A5-41FA-8B37-CDCD57ACE8AC",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "A4AA9DC4-85F6-4349-AD57-E28E9F402CB2",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "a",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace resize smart +140",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "62,56,0",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 37
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1076069,
+              "BTTLastUpdatedAt" : 1792270330.1004419,
               "BTTTriggerType" : 115,
               "BTTTriggerTypeDescriptionReadOnly" : "Pinch In",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "EFD175E5-8B9F-4D9A-ADC9-6D54FCD5813C",
               "BTTRepeatRate" : 2,
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 6,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1756481000.120337,
+                  "BTTLastUpdatedAt" : 1792269234.4706459,
                   "BTTTriggerParentUUID" : "EFD175E5-8B9F-4D9A-ADC9-6D54FCD5813C",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "F13260C2-8FF0-427C-A251-72A08864A771",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "z",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace resize smart -140",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "62,56,6",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 36
                 }
               ]
@@ -785,93 +823,105 @@
               "BTTGestureNotes" : "Movement"
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1074781,
+              "BTTLastUpdatedAt" : 1792273331.652267,
               "BTTTriggerType" : 105,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Left",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "350A3212-1568-4AFB-BFDF-924033277CA8",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 8,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738782612.5176449,
+                  "BTTLastUpdatedAt" : 1792269235.6739058,
                   "BTTTriggerParentUUID" : "350A3212-1568-4AFB-BFDF-924033277CA8",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "99F4541D-046E-49C3-BF8E-AF34759C238C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "h",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move left --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,4",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 9
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1074271,
+              "BTTLastUpdatedAt" : 1792273331.8371561,
               "BTTTriggerType" : 106,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Right",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "AA20A2F2-BDE8-4DC9-88CF-CDA3CF307D41",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 9,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738782619.848881,
+                  "BTTLastUpdatedAt" : 1792269236.3282299,
                   "BTTTriggerParentUUID" : "AA20A2F2-BDE8-4DC9-88CF-CDA3CF307D41",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "6D57EDFA-0C44-4BEC-8B91-5BE593315520",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "l",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move right --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,37",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 13
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.107583,
+              "BTTLastUpdatedAt" : 1792273332.027729,
               "BTTTriggerType" : 107,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Down",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "2A96866E-4D8D-4747-9C33-30B57A657515",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 10,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738782624.6555219,
+                  "BTTLastUpdatedAt" : 1792269236.9407659,
                   "BTTTriggerParentUUID" : "2A96866E-4D8D-4747-9C33-30B57A657515",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "813490FE-5900-4652-8DB8-C55CF4CEB68B",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "j",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,38",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 14
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.107466,
+              "BTTLastUpdatedAt" : 1792273332.2093301,
               "BTTTriggerType" : 108,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Up",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "456755A2-69C7-4394-9E34-8CA60FFB6B8D",
-              "BTTRequiredModifierKeys" : 393216,
+              "BTTRequiredModifierKeys" : 1966080,
               "BTTOrder" : 11,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738782630.413341,
+                  "BTTLastUpdatedAt" : 1792269237.14186,
                   "BTTTriggerParentUUID" : "456755A2-69C7-4394-9E34-8CA60FFB6B8D",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "77919FB4-32D3-4D1B-A5A4-405CD949EEF3",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "k",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,40",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 15
                 }
               ]
@@ -890,24 +940,27 @@
               "BTTGestureNotes" : "Focus"
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.107439,
+              "BTTLastUpdatedAt" : 1792273332.3982711,
               "BTTTriggerType" : 105,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Left",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "E4FCEE83-59E3-4BDE-9337-745209134BF2",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 13,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739464775.1357851,
+                  "BTTLastUpdatedAt" : 1792269239.7444839,
                   "BTTTriggerParentUUID" : "E4FCEE83-59E3-4BDE-9337-745209134BF2",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "7A38BFDF-9081-4159-A074-442F9CC5FB9E",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "h",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus left --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,4",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 9
                 }
               ],
@@ -917,47 +970,53 @@
               }
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1074538,
+              "BTTLastUpdatedAt" : 1792273332.5873919,
               "BTTTriggerType" : 106,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Right",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "5DB053CE-371F-42C9-B173-E1F5EDC81C60",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 14,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739464800.6152771,
+                  "BTTLastUpdatedAt" : 1792269237.3457022,
                   "BTTTriggerParentUUID" : "5DB053CE-371F-42C9-B173-E1F5EDC81C60",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "1CB986FF-76AA-4168-9807-5ED2B543B943",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "l",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus right --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,37",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 13
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1077352,
+              "BTTLastUpdatedAt" : 1792273332.7732611,
               "BTTTriggerType" : 107,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Down",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "9518F203-AA48-4B39-94A4-ECE66270797B",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 15,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739464825.2283721,
+                  "BTTLastUpdatedAt" : 1792269237.7459331,
                   "BTTTriggerParentUUID" : "9518F203-AA48-4B39-94A4-ECE66270797B",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "5796D1D9-2D14-4712-953B-BBF3D4C609FC",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "j",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,38",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 14
                 }
               ]
@@ -973,37 +1032,43 @@
               "BTTOrder" : 16,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1757181632.3756108,
+                  "BTTLastUpdatedAt" : 1792269682.346905,
                   "BTTTriggerParentUUID" : "3B7920C7-8BEB-4D1E-8FD7-6F4B4EE55571",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "2771BE43-6393-4762-93D6-2A4E045D4958",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "j",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,38",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 14
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1077471,
+              "BTTLastUpdatedAt" : 1792273332.9649649,
               "BTTTriggerType" : 108,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Up",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "2C888D44-E5A2-423A-AE51-C3B3B71A1344",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 17,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739464867.695467,
+                  "BTTLastUpdatedAt" : 1792269238.3446832,
                   "BTTTriggerParentUUID" : "2C888D44-E5A2-423A-AE51-C3B3B71A1344",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "1FBEF6F6-804D-451F-9482-BEC2E3B8663E",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "k",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,40",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 15
                 }
               ]
@@ -1019,14 +1084,17 @@
               "BTTOrder" : 18,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1757181639.670006,
+                  "BTTLastUpdatedAt" : 1792269682.524277,
                   "BTTTriggerParentUUID" : "306AEBE3-4A0D-4127-80E5-B18C8EA84FA5",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "24847AFF-3615-4FDE-B19E-32240A6BE261",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "k",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,40",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 15
                 }
               ]
@@ -1045,93 +1113,105 @@
               "BTTGestureNotes" : "Move and join"
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1074109,
+              "BTTLastUpdatedAt" : 1792273899.517226,
               "BTTTriggerType" : 105,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Left",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "99C7B4D9-DDD9-45C9-AD86-1454AA2DD432",
-              "BTTRequiredModifierKeys" : 917504,
+              "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 20,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739465090.3625731,
+                  "BTTLastUpdatedAt" : 1792269238.9548259,
                   "BTTTriggerParentUUID" : "99C7B4D9-DDD9-45C9-AD86-1454AA2DD432",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "ED1E1AED-724A-4EF0-A823-AE960732382C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "h",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace join-with left",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,58,56,4",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 9
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.107775,
+              "BTTLastUpdatedAt" : 1792273899.7054338,
               "BTTTriggerType" : 106,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Right",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "C394E362-5FDA-4495-9022-373E7EC6630C",
-              "BTTRequiredModifierKeys" : 917504,
+              "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 21,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739465096.389492,
+                  "BTTLastUpdatedAt" : 1792269239.154525,
                   "BTTTriggerParentUUID" : "C394E362-5FDA-4495-9022-373E7EC6630C",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "6E7E9290-6684-4854-88F8-896A890AEB3F",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "l",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace join-with right",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,58,56,37",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 13
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1077108,
+              "BTTLastUpdatedAt" : 1792273899.8863821,
               "BTTTriggerType" : 107,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Down",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "9D08F41B-A65F-451D-99D3-B938122AE7FF",
-              "BTTRequiredModifierKeys" : 917504,
+              "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 22,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739465102.5993209,
+                  "BTTLastUpdatedAt" : 1792269239.344698,
                   "BTTTriggerParentUUID" : "9D08F41B-A65F-451D-99D3-B938122AE7FF",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "D5E6415B-09BE-4DC9-9500-0F7A27BB7FB7",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "j",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace join-with down",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,58,56,38",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 14
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.107811,
+              "BTTLastUpdatedAt" : 1792273900.074806,
               "BTTTriggerType" : 108,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Up",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "CF45BB82-4B29-46EE-97FB-5854983CD9D1",
-              "BTTRequiredModifierKeys" : 917504,
+              "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 23,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739465116.1868339,
+                  "BTTLastUpdatedAt" : 1792269239.5381541,
                   "BTTTriggerParentUUID" : "CF45BB82-4B29-46EE-97FB-5854983CD9D1",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "17134F60-4E2B-462E-8231-987539B77C6C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "k",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace join-with up",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,58,56,40",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 15
                 }
               ]
@@ -1165,7 +1245,7 @@
           ]
         },
         {
-          "BTTLastUpdatedAt" : 1756915211.8218179,
+          "BTTLastUpdatedAt" : 1792269082.034898,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
           "BTTUUID" : "0E280962-BB01-452B-AD84-9CDC1C810FC7",
@@ -1180,14 +1260,17 @@
           "BTTAutoAdaptToKeyboardLayout" : 0,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1756915215.6117949,
+              "BTTLastUpdatedAt" : 1792269229.9028101,
               "BTTTriggerParentUUID" : "0E280962-BB01-452B-AD84-9CDC1C810FC7",
               "BTTIsPureAction" : true,
               "BTTUUID" : "59944629-2D7F-45D8-8141-5714979FFB69",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : "z",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace resize smart -140",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "62,56,6",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 38
             }
           ]
@@ -1243,189 +1326,209 @@
           "BTTOrder" : 1,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1731274839.5048099,
+              "BTTLastUpdatedAt" : 1792270327.316304,
               "BTTTriggerType" : 5,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Left",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "C6C4EBA4-0744-42D6-83B8-25E4A55B2884",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 0,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738783518.37764,
+                  "BTTLastUpdatedAt" : 1792269681.7821989,
                   "BTTTriggerParentUUID" : "C6C4EBA4-0744-42D6-83B8-25E4A55B2884",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "5F93A066-190A-44F5-9250-D347EA202B5F",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "TAB",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace workspace prev --wrap-around --no-stdin",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "58,48",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 9
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731274839.5048618,
+              "BTTLastUpdatedAt" : 1792270327.7176452,
               "BTTTriggerType" : 6,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Right",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "002779FC-3A9D-4EA8-8672-67EA592089A0",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 1,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1738783529.651583,
+                  "BTTLastUpdatedAt" : 1792269682.1680021,
                   "BTTTriggerParentUUID" : "002779FC-3A9D-4EA8-8672-67EA592089A0",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "99B453CB-E476-454F-B46F-62B5AE4E1390",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "TAB",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace workspace next --wrap-around --no-stdin",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,58,48",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 10
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731274839.5047431,
+              "BTTLastUpdatedAt" : 1792273329.767242,
               "BTTTriggerType" : 8,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Down",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "276E93FC-0F05-4F75-986E-34F91C8AB665",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 2,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731268590.6919589,
+                  "BTTLastUpdatedAt" : 1792269230.818733,
                   "BTTTriggerParentUUID" : "276E93FC-0F05-4F75-986E-34F91C8AB665",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "B5400306-4A7D-4268-B493-9B6C0286766A",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "UP",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,126",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 11
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731274839.504827,
+              "BTTLastUpdatedAt" : 1792273329.957402,
               "BTTTriggerType" : 7,
               "BTTTriggerTypeDescriptionReadOnly" : "2 Finger Swipe Up",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "83FC879F-9EF6-41FB-870F-DF7D72341F49",
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 3,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731268549.214272,
+                  "BTTLastUpdatedAt" : 1792269231.72334,
                   "BTTTriggerParentUUID" : "83FC879F-9EF6-41FB-870F-DF7D72341F49",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "5A126E03-2367-4A8B-8360-98C36F20E88C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "UP",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,126",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 12
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731274839.5047269,
+              "BTTLastUpdatedAt" : 1792273330.5172019,
               "BTTTriggerType" : 33,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Swipe Down",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "203919E4-FA4B-45B7-BB97-25EBBEB3B439",
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 4,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731258264.4329271,
+                  "BTTLastUpdatedAt" : 1792269232.6309772,
                   "BTTTriggerParentUUID" : "203919E4-FA4B-45B7-BB97-25EBBEB3B439",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "C52E419E-6311-49BB-861B-CD9AE86A3ED3",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "UP",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,126",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 8
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731274839.5047731,
+              "BTTLastUpdatedAt" : 1792273330.8921089,
               "BTTTriggerType" : 34,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Swipe Up",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "0C4230AC-1E05-4058-8C1D-598D919D9C9B",
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 5,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731268481.81916,
+                  "BTTLastUpdatedAt" : 1792269233.5498528,
                   "BTTTriggerParentUUID" : "0C4230AC-1E05-4058-8C1D-598D919D9C9B",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "ABFA027E-A0BB-4485-B5EF-0F717037980F",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "DOWN",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,125",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 12
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731312076.545274,
+              "BTTLastUpdatedAt" : 1792273331.2699242,
               "BTTTriggerType" : 36,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Swipe Right",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "3333D1ED-5EF0-4E5F-97DA-2738D5D3A2DC",
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 6,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731274826.018682,
+                  "BTTLastUpdatedAt" : 1792269234.082824,
                   "BTTTriggerParentUUID" : "3333D1ED-5EF0-4E5F-97DA-2738D5D3A2DC",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "0D00816D-AD0B-42BC-B01D-356C8FE4EB8C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "RIGHT",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus right --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,124",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 9
                 }
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1731312076.5464239,
+              "BTTLastUpdatedAt" : 1792273331.46158,
               "BTTTriggerType" : 35,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Swipe Left",
               "BTTTriggerParentUUID" : "A8983098-343C-42B2-AB65-E32784245E28",
               "BTTTriggerClass" : "BTTTriggerTypeMagicMouse",
               "BTTUUID" : "AB7FD0F1-8DFE-4FD4-8B4F-D0CAB7C02AB7",
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 262144,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 7,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731274856.703202,
+                  "BTTLastUpdatedAt" : 1792269234.869508,
                   "BTTTriggerParentUUID" : "AB7FD0F1-8DFE-4FD4-8B4F-D0CAB7C02AB7",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "F792DF06-11CA-4A1A-AA06-24B80240506D",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "LEFT",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus left --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,123",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 10
                 }
               ]
@@ -1456,14 +1559,17 @@
               "BTTOrder" : 0,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739811159.2519078,
+                  "BTTLastUpdatedAt" : 1792269681.5969529,
                   "BTTTriggerParentUUID" : "28E67E27-FF9F-42AF-B1B2-8226399B2762",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "601D9D73-4520-4C94-A27B-947334AF9DD5",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "TAB",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace workspace prev --wrap-around --no-stdin",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,48",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 10
                 }
               ]
@@ -1479,14 +1585,17 @@
               "BTTOrder" : 1,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1739811164.594336,
+                  "BTTLastUpdatedAt" : 1792269681.9801159,
                   "BTTTriggerParentUUID" : "A67D6A7D-C51A-4521-9860-AD4B82124079",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "84EDB703-E611-487D-9474-E4F5AF3A248C",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "TAB",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace workspace next --wrap-around --no-stdin",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,48",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 11
                 }
               ]
@@ -1503,14 +1612,17 @@
               "BTTOrder" : 2,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731273550.1198421,
+                  "BTTLastUpdatedAt" : 1792269231.1811581,
                   "BTTTriggerParentUUID" : "AE6563BC-89AA-48CC-8951-82D57D638288",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "E78B59DB-AC9A-47FA-B0BF-FA1E617459FC",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "UP",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,126",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 12
                 }
               ]
@@ -1527,14 +1639,17 @@
               "BTTOrder" : 3,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1731273516.3775969,
+                  "BTTLastUpdatedAt" : 1792269231.538409,
                   "BTTTriggerParentUUID" : "5C207A1E-DFCC-4029-A0D5-1C6E61CE6391",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "71D05D53-83E4-4AD3-A82B-80BD3BC7675D",
-                  "BTTPredefinedActionType" : 264,
-                  "BTTPredefinedActionName" : "",
+                  "BTTPredefinedActionType" : 206,
+                  "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "UP",
+                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace focus up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,126",
+                  "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
                   "BTTOrder" : 13
                 }
               ]
@@ -1607,6 +1722,32 @@
               "BTTPredefinedActionName" : "",
               "BTTShortcutToSend" : "59,56,37",
               "BTTOrder" : 2
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1792269317.6866021,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "4AE18670-8C49-4CE6-ACD4-2E0891DE1E1F",
+          "BTTAdditionalConfiguration" : "0",
+          "BTTShortcutKeyboardType" : -2052004921,
+          "BTTTriggerOnDown" : 1,
+          "BTTShortcutKeyCode" : 1004,
+          "BTTShortcutAdvancedModifierKeys" : "0",
+          "BTTShortcutModifierKeys" : 0,
+          "BTTOrder" : 2,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1792270165.81953,
+              "BTTTriggerParentUUID" : "4AE18670-8C49-4CE6-ACD4-2E0891DE1E1F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "8EAD07EE-4A22-4791-9311-4A05E159361D",
+              "BTTPredefinedActionType" : 293,
+              "BTTPredefinedActionName" : "Act as Hyper Key",
+              "BTTActionHyperkeyExcludeShift" : "1",
+              "BTTOrder" : 43
             }
           ]
         },
@@ -1893,14 +2034,17 @@
           "BTTOrder" : 7,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1732983888.4014769,
+              "BTTLastUpdatedAt" : 1792269235.2777839,
               "BTTTriggerParentUUID" : "678346C2-BD4B-431E-B41D-89F0FFDB8F1A",
               "BTTIsPureAction" : true,
               "BTTUUID" : "1B3B474D-EF93-4EF0-84DD-8804B0F4C262",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : "m",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace fullscreen",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "59,46",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 5
             }
           ]
@@ -1915,14 +2059,17 @@
           "BTTOrder" : 8,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1772542086.5743752,
+              "BTTLastUpdatedAt" : 1792269235.8888459,
               "BTTTriggerParentUUID" : "5726B10B-7C1F-4F0F-B0C2-364C18AF161D",
               "BTTIsPureAction" : true,
               "BTTUUID" : "C58ECC55-8859-4268-B432-574EEF8B1795",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : ",",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout accordion tiles",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "59,43",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 40
             }
           ]
@@ -1937,14 +2084,17 @@
           "BTTOrder" : 8,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1732983921.0186219,
+              "BTTLastUpdatedAt" : 1792269235.466984,
               "BTTTriggerParentUUID" : "AE27787A-387A-4ACA-BC17-449FB4EC8F73",
               "BTTIsPureAction" : true,
               "BTTUUID" : "9C1A4472-83DD-48D2-A0AB-901D2BB81993",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : "t",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout floating tiling",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "59,17",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 6
             }
           ]
@@ -1959,14 +2109,17 @@
           "BTTOrder" : 9,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1772542104.391937,
+              "BTTLastUpdatedAt" : 1792269236.5396771,
               "BTTTriggerParentUUID" : "8034E515-BBCE-4382-AD4B-DE7A1C426C71",
               "BTTIsPureAction" : true,
               "BTTUUID" : "F03C8855-3DF2-4324-AAFB-C63FEB88C127",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : ".",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout horizontal vertical",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "59,47",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 41
             }
           ]
@@ -1980,14 +2133,17 @@
           "BTTOrder" : 9,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1738782442.9197001,
+              "BTTLastUpdatedAt" : 1792269236.1129699,
               "BTTTriggerParentUUID" : "F04926EB-93A1-4FB5-8E80-C9E346361998",
               "BTTIsPureAction" : true,
               "BTTUUID" : "59CE9039-9BD7-4C0E-AB40-A45E9EF04BC0",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : "m",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace fullscreen",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "59,46",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 28
             }
           ]
@@ -2002,14 +2158,17 @@
           "BTTOrder" : 10,
           "BTTActionsToExecute" : [
             {
-              "BTTLastUpdatedAt" : 1738782450.2803211,
+              "BTTLastUpdatedAt" : 1792269236.739207,
               "BTTTriggerParentUUID" : "3B1811EF-2F22-4512-80B9-E58882F65180",
               "BTTIsPureAction" : true,
               "BTTUUID" : "32A5B575-065E-40AB-AB57-C49CFDDFCC17",
-              "BTTPredefinedActionType" : 264,
-              "BTTPredefinedActionName" : "",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
               "BTTLayoutIndependentActionChar" : "t",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout floating tiling",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTShortcutToSend" : "59,17",
+              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 8
             }
           ]
