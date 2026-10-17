@@ -11,7 +11,9 @@
 	<key>clipboardAutoClearDelaySeconds</key>
 	<integer>20</integer>
 	<key>clipboardHistoryEnabled</key>
-	<true/>
+	<false/>
+	<key>clipboardHistoryLayout</key>
+	<string>list</string>
 	<key>clipboardHistoryLimit</key>
 	<integer>50</integer>
 	<key>clipboardHistoryMenuBarPreviewLength</key>
@@ -229,7 +231,7 @@
 	<key>menuBarSeparateMetrics</key>
 	<false/>
 	<key>minimalWindowPreviews</key>
-	<true/>
+	<false/>
 	<key>monitorAlertBattery</key>
 	<true/>
 	<key>monitorAlertBatteryPercent</key>
@@ -326,6 +328,8 @@
 	<true/>
 	<key>notchWatchEnabled</key>
 	<false/>
+	<key>panelUtilityClipboard</key>
+	<false/>
 	<key>panelUtilityWindowLayout</key>
 	<false/>
 	<key>pastePlainEnabled</key>
@@ -335,9 +339,11 @@
 	<key>screenshotFullScreenShortcutEnabled</key>
 	<false/>
 	<key>screenshotShortcut</key>
-	<string>shift+command:7</string>
+	<string>control+option+shift+command:1</string>
 	<key>screenshotShortcutEnabled</key>
 	<true/>
+	<key>screenshotWatermarkStyle</key>
+	<string>{"anchor":"bottomTrailing","text":"Marcus","kind":"image","color":"white","rotation":0,"opacity":0.4,"size":0.3}</string>
 	<key>scrollInverterHorizontalEnabled</key>
 	<false/>
 	<key>shelfEnabled</key>
