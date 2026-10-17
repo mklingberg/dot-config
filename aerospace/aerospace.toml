@@ -248,6 +248,14 @@ automatically-unhide-macos-hidden-apps = false
     run = 'layout floating'
 
 [[on-window-detected]]
+    if.app-id = 'com.vorssaint.utils'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'com.tinycast.app'
+    run = 'layout floating'
+
+[[on-window-detected]]
 #    if.window-title-regex-substring = '^Spotify$'
     if.app-id = 'com.spotify.client'
     run = 'move-node-to-workspace 5'
