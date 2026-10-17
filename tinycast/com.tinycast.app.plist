@@ -61,8 +61,10 @@
 		<string>extension:toothpick/connect-favorite-device-2</string>
 		<string>extension:toothpick/toggle-favorite-device-1</string>
 	</array>
+	<key>hotkey.command:clipboard-history</key>
+	<string>{"combo":{"_0":{"carbonKeyCode":9,"carbonModifiers":4096}}}</string>
 	<key>hotkey.command:search-menu-items</key>
-	<string>{"combo":{"_0":{"carbonModifiers":6912,"carbonKeyCode":1}}}</string>
+	<string>{"combo":{"_0":{"carbonKeyCode":49,"carbonModifiers":2048}}}</string>
 	<key>hotkey.togglePalette</key>
 	<string>{"combo":{"_0":{"carbonKeyCode":49,"carbonModifiers":256}}}</string>
 	<key>menuSearchShowsAppleMenu</key>
