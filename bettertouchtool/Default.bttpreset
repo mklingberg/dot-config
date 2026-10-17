@@ -162,7 +162,7 @@
     },
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
   },
-  "BTTPresetUUID" : "C701640C-F51F-4C9F-833F-C56675C8B4A0",
+  "BTTPresetUUID" : "3A24A11B-3D80-4C25-B152-C2BE191822D1",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -622,14 +622,13 @@
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.107723,
+              "BTTLastUpdatedAt" : 1792277258.643158,
               "BTTTriggerType" : 123,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Tap Top Right",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "075DB5A8-2BEE-4467-A0A5-63F3A1699E77",
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 524288,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 2,
               "BTTActionsToExecute" : [
                 {
@@ -649,14 +648,13 @@
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1757181642.1076441,
+              "BTTLastUpdatedAt" : 1792277258.8336282,
               "BTTTriggerType" : 126,
               "BTTTriggerTypeDescriptionReadOnly" : "1 Finger Tap Bottom Right",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "4EEE2572-BDBF-43E2-8C5E-92DCED0747ED",
-              "BTTEnabled2" : 0,
-              "BTTRequiredModifierKeys" : 524288,
+              "BTTRequiredModifierKeys" : 1835008,
               "BTTOrder" : 3,
               "BTTActionsToExecute" : [
                 {
