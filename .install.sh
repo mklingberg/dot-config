@@ -69,10 +69,10 @@ echo "Installing Brew Casks..."
 brew install --cask betterdisplay
 brew install --cask bettertouchtool
 brew install --cask bettermouse
-brew install --cask raycast
+brew install --cask abue-ammar/tinycast/tinycast
 brew install --cask spotify
 brew install --cask nikitabobko/tap/aerospace
-brew install --cask vishvavariya/notchy/notchy
+brew install --cask vorssaint
 
 ### Terminals
 brew install --cask ghostty
