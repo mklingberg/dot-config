@@ -147,6 +147,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # When NSWindowShouldDragOnGesture is set to YES, it allows you to drag windows using a three-finger drag gesture on the trackpad
 defaults write -g NSWindowShouldDragOnGesture YES
 
+# App settings tracked in this repo (Tinycast, Vorssaint)
+"$CONFIG_DIR/app-prefs.sh" import
+
 echo "Fonts and utils..."
 
 # Installing Fonts

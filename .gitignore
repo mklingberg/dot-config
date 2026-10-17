@@ -20,6 +20,11 @@
 !aerospace
 !aerospace.toml
 !.install.sh
+!app-prefs.sh
+!tinycast
+!tinycast/**/*
+!vorssaint
+!vorssaint/**/*
 !Default.bttpreset
 !bm_cfg.plist
 !secrets

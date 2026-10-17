@@ -76,6 +76,23 @@ Config:
 - `vscode/settings.json`
 - `vscode/keybindings.json`
 
+### Tinycast + Vorssaint
+Tinycast is the launcher (Raycast replacement); Vorssaint covers menu bar metrics, notch, clipboard history and the app switcher.
+
+Both keep settings in `~/Library/Preferences`, which can't be symlinked, so `app-prefs.sh` exports them with per-machine state (usage stats, window positions, onboarding flags) stripped, and merges them back on import.
+
+Config:
+- `tinycast/com.tinycast.app.plist`
+- `vorssaint/com.vorssaint.utils.plist`
+
+Usage:
+```bash
+./app-prefs.sh export   # after changing settings, then commit
+./app-prefs.sh import   # quits + relaunches running apps
+```
+
+Not tracked: Tinycast extensions (reinstall from the store).
+
 ### Bootstrap scripts
 This repo also contains the "bring a new machine up fast" layer.
 
