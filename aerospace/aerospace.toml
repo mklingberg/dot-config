@@ -77,7 +77,7 @@ automatically-unhide-macos-hidden-apps = false
 #   hyper-shift    take the window along: move (hjkl), send to workspace
 #   hyper-esc      service ('arrange') mode for everything else — sticky, no modifiers
 # hjkl rather than arrows: BTT's hyper drops shift on arrow keys. Plain ctrl-hjkl stays free.
-# Avoid: hyper-v / hyper-c (Vorssaint clipboard / color picker), hyper-shift-s (Vorssaint screenshot),
+# Avoid: hyper-v / hyper-c (Vorssaint clipboard / color picker), hyper-s (Vorssaint screenshot), hyper-shift-m (Vorssaint mic mute),
 #        hyper-8 (macOS invert colors).
 # BTT gestures call the aerospace CLI directly with matching modifiers.
 [mode.main.binding]
@@ -120,6 +120,7 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-cmd-tab = 'workspace-back-and-forth'
 
     ctrl-alt-cmd-f = 'fullscreen'
+    ctrl-alt-cmd-shift-s = 'layout accordion tiles'  # stack toggle (hyper-s = Vorssaint screenshot)
     ctrl-alt-cmd-esc = 'mode service'
 
 
