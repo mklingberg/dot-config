@@ -153,8 +153,9 @@ automatically-unhide-macos-hidden-apps = false
     shift-right = 'move right --boundaries all-monitors-outer-frame'
 
     # Group with previous / next neighbour (row → left/right, column → up/down)
-    comma = 'exec-and-forget /opt/homebrew/bin/aerospace join-with left || /opt/homebrew/bin/aerospace join-with up'
-    period = 'exec-and-forget /opt/homebrew/bin/aerospace join-with right || /opt/homebrew/bin/aerospace join-with down'
+    # Disabled: smart move (hyper-shift-hjkl) covers joining. Re-enable if up/down joins are missed.
+    # comma = 'exec-and-forget /opt/homebrew/bin/aerospace join-with left || /opt/homebrew/bin/aerospace join-with up'
+    # period = 'exec-and-forget /opt/homebrew/bin/aerospace join-with right || /opt/homebrew/bin/aerospace join-with down'
 
     # Resize
     a = 'resize smart +140'
