@@ -162,7 +162,7 @@
     },
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
   },
-  "BTTPresetUUID" : "71C78014-4B63-4EC1-958E-35DF164D077C",
+  "BTTPresetUUID" : "54F9A499-DC96-44FA-95C5-C877B558F64B",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -548,37 +548,6 @@
               "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace fullscreen",
               "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1792269082.034909,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "A82FB03D-83D6-44DC-9D77-26D8AE0001C3",
-          "BTTAdditionalConfiguration" : "8519682",
-          "BTTShortcutKeyboardType" : -2052004921,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "a",
-          "BTTShortcutKeyCode" : 0,
-          "BTTShortcutAdvancedModifierKeys" : "8519682",
-          "BTTShortcutModifierKeys" : 8519680,
-          "BTTOrder" : 0,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1792269228.465513,
-              "BTTTriggerParentUUID" : "A82FB03D-83D6-44DC-9D77-26D8AE0001C3",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "C402810F-C9C1-432D-8671-1A9512F3A772",
-              "BTTPredefinedActionType" : 206,
-              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
-              "BTTLayoutIndependentActionChar" : "a",
-              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace resize smart +140",
-              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
-              "BTTShortcutToSend" : "62,56,0",
-              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
-              "BTTOrder" : 37
             }
           ]
         },
@@ -1216,37 +1185,6 @@
               "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout accordion tiles",
               "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
               "BTTOrder" : 0
-            }
-          ]
-        },
-        {
-          "BTTLastUpdatedAt" : 1792269082.034898,
-          "BTTTriggerType" : 0,
-          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
-          "BTTUUID" : "0E280962-BB01-452B-AD84-9CDC1C810FC7",
-          "BTTAdditionalConfiguration" : "8519682",
-          "BTTShortcutKeyboardType" : -2052004921,
-          "BTTTriggerOnDown" : 1,
-          "BTTLayoutIndependentChar" : "z",
-          "BTTShortcutKeyCode" : 6,
-          "BTTShortcutAdvancedModifierKeys" : "8519682",
-          "BTTShortcutModifierKeys" : 8519680,
-          "BTTOrder" : 1,
-          "BTTAutoAdaptToKeyboardLayout" : 0,
-          "BTTActionsToExecute" : [
-            {
-              "BTTLastUpdatedAt" : 1792269229.9028101,
-              "BTTTriggerParentUUID" : "0E280962-BB01-452B-AD84-9CDC1C810FC7",
-              "BTTIsPureAction" : true,
-              "BTTUUID" : "59944629-2D7F-45D8-8141-5714979FFB69",
-              "BTTPredefinedActionType" : 206,
-              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
-              "BTTLayoutIndependentActionChar" : "z",
-              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace resize smart -140",
-              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
-              "BTTShortcutToSend" : "62,56,6",
-              "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
-              "BTTOrder" : 38
             }
           ]
         },
