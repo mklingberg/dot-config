@@ -162,7 +162,7 @@
     },
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
   },
-  "BTTPresetUUID" : "3A24A11B-3D80-4C25-B152-C2BE191822D1",
+  "BTTPresetUUID" : "71C78014-4B63-4EC1-958E-35DF164D077C",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -530,6 +530,28 @@
           }
         },
         {
+          "BTTLastUpdatedAt" : 1792323559.837625,
+          "BTTTriggerType" : 121,
+          "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "A6020E57-A95A-4716-958A-BD15DADFA11F",
+          "BTTRequiredModifierKeys" : 0,
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1792323289.3659649,
+              "BTTTriggerParentUUID" : "A6020E57-A95A-4716-958A-BD15DADFA11F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "B9E6D971-0541-4B84-9DA0-7D9069FEC068",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace fullscreen",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 0
+            }
+          ]
+        },
+        {
           "BTTLastUpdatedAt" : 1792269082.034909,
           "BTTTriggerType" : 0,
           "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
@@ -764,14 +786,14 @@
               "BTTOrder" : 8,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1792269235.6739058,
+                  "BTTLastUpdatedAt" : 1792323836.5607572,
                   "BTTTriggerParentUUID" : "350A3212-1568-4AFB-BFDF-924033277CA8",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "99F4541D-046E-49C3-BF8E-AF34759C238C",
                   "BTTPredefinedActionType" : 206,
                   "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "h",
-                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move left --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionScript" : "/Users/marcusklingberg/.config/aerospace/smart-move.sh left",
                   "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,4",
                   "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
@@ -790,14 +812,14 @@
               "BTTOrder" : 9,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1792269236.3282299,
+                  "BTTLastUpdatedAt" : 1792323836.809212,
                   "BTTTriggerParentUUID" : "AA20A2F2-BDE8-4DC9-88CF-CDA3CF307D41",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "6D57EDFA-0C44-4BEC-8B91-5BE593315520",
                   "BTTPredefinedActionType" : 206,
                   "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "l",
-                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move right --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionScript" : "/Users/marcusklingberg/.config/aerospace/smart-move.sh right",
                   "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,37",
                   "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
@@ -816,14 +838,14 @@
               "BTTOrder" : 10,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1792269236.9407659,
+                  "BTTLastUpdatedAt" : 1792323837.054167,
                   "BTTTriggerParentUUID" : "2A96866E-4D8D-4747-9C33-30B57A657515",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "813490FE-5900-4652-8DB8-C55CF4CEB68B",
                   "BTTPredefinedActionType" : 206,
                   "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "j",
-                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move down --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionScript" : "/Users/marcusklingberg/.config/aerospace/smart-move.sh down",
                   "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,38",
                   "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
@@ -842,14 +864,14 @@
               "BTTOrder" : 11,
               "BTTActionsToExecute" : [
                 {
-                  "BTTLastUpdatedAt" : 1792269237.14186,
+                  "BTTLastUpdatedAt" : 1792323837.309525,
                   "BTTTriggerParentUUID" : "456755A2-69C7-4394-9E34-8CA60FFB6B8D",
                   "BTTIsPureAction" : true,
                   "BTTUUID" : "77919FB4-32D3-4D1B-A5A4-405CD949EEF3",
                   "BTTPredefinedActionType" : 206,
                   "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
                   "BTTLayoutIndependentActionChar" : "k",
-                  "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace move up --boundaries all-monitors-outer-frame",
+                  "BTTShellTaskActionScript" : "/Users/marcusklingberg/.config/aerospace/smart-move.sh up",
                   "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
                   "BTTShortcutToSend" : "59,56,40",
                   "BTTShortcutUpDown" : "/bin/bash:::-c:::-:::",
@@ -1172,6 +1194,28 @@
               "BTTPredefinedActionName" : "",
               "BTTShortcutToSend" : "59,56,4",
               "BTTOrder" : 1
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1792323621.8107619,
+          "BTTTriggerType" : 121,
+          "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Click",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "E79F5109-62B8-474C-B93F-B050A5926103",
+          "BTTRequiredModifierKeys" : 1966080,
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1792323289.5825329,
+              "BTTTriggerParentUUID" : "E79F5109-62B8-474C-B93F-B050A5926103",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "D1627BA7-F3BA-4284-8AAE-AC1840884FB5",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/aerospace layout accordion tiles",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 0
             }
           ]
         },
@@ -2578,11 +2622,13 @@
           "BTTGestureNotes" : "Toggles mute of microphone i Teams"
         },
         {
-          "BTTLastUpdatedAt" : 1731690314.83213,
+          "BTTLastUpdatedAt" : 1792323357.3838339,
           "BTTTriggerType" : 110,
           "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Tap",
           "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
           "BTTUUID" : "EF295D56-951B-43C9-84A1-E7F65ED0E969",
+          "BTTEnabled" : 0,
+          "BTTEnabled2" : 0,
           "BTTOrder" : 0,
           "BTTActionsToExecute" : [
             {
