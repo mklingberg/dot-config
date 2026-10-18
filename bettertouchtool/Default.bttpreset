@@ -162,7 +162,7 @@
     },
     "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
   },
-  "BTTPresetUUID" : "54F9A499-DC96-44FA-95C5-C877B558F64B",
+  "BTTPresetUUID" : "4B35C784-9F29-4115-A4DD-15D6E474E1A8",
   "BTTPresetContent" : [
     {
       "BTTAppBundleIdentifier" : "BT.G",
@@ -1035,12 +1035,14 @@
               "BTTGestureNotes" : "Move and join"
             },
             {
-              "BTTLastUpdatedAt" : 1792273899.517226,
+              "BTTLastUpdatedAt" : 1792324703.5784559,
               "BTTTriggerType" : 105,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Left",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "99C7B4D9-DDD9-45C9-AD86-1454AA2DD432",
+              "BTTEnabled" : 0,
+              "BTTEnabled2" : 0,
               "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 20,
               "BTTActionsToExecute" : [
@@ -1061,12 +1063,14 @@
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1792273899.7054338,
+              "BTTLastUpdatedAt" : 1792324704.0283961,
               "BTTTriggerType" : 106,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Right",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "C394E362-5FDA-4495-9022-373E7EC6630C",
+              "BTTEnabled" : 0,
+              "BTTEnabled2" : 0,
               "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 21,
               "BTTActionsToExecute" : [
@@ -1087,12 +1091,14 @@
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1792273899.8863821,
+              "BTTLastUpdatedAt" : 1792324704.4382648,
               "BTTTriggerType" : 107,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Down",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "9D08F41B-A65F-451D-99D3-B938122AE7FF",
+              "BTTEnabled" : 0,
+              "BTTEnabled2" : 0,
               "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 22,
               "BTTActionsToExecute" : [
@@ -1113,12 +1119,14 @@
               ]
             },
             {
-              "BTTLastUpdatedAt" : 1792273900.074806,
+              "BTTLastUpdatedAt" : 1792324704.840807,
               "BTTTriggerType" : 108,
               "BTTTriggerTypeDescriptionReadOnly" : "4 Finger Swipe Up",
               "BTTTriggerParentUUID" : "AC40784D-7CF5-4CDE-A957-1D735EBFBADE",
               "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
               "BTTUUID" : "CF45BB82-4B29-46EE-97FB-5854983CD9D1",
+              "BTTEnabled" : 0,
+              "BTTEnabled2" : 0,
               "BTTRequiredModifierKeys" : 393216,
               "BTTOrder" : 23,
               "BTTActionsToExecute" : [
