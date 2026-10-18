@@ -16,6 +16,7 @@
 !starship
 !starship.toml
 !aerospace
+!aerospace/**/*
 !aerospace.toml
 !.install.sh
 !app-prefs.sh
