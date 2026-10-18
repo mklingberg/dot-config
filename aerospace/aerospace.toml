@@ -121,6 +121,8 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-cmd-tab = 'workspace-back-and-forth'
 
     ctrl-alt-cmd-f = 'fullscreen'
+    ctrl-alt-cmd-shift-a = 'resize smart +140'
+    ctrl-alt-cmd-shift-z = 'resize smart -140'
     ctrl-alt-cmd-shift-s = 'layout accordion tiles'  # stack toggle (hyper-s = Vorssaint screenshot)
     ctrl-alt-cmd-esc = 'mode service'
 
