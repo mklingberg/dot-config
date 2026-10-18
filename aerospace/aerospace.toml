@@ -88,10 +88,11 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-alt-cmd-k = 'focus up --boundaries all-monitors-outer-frame'
     ctrl-alt-cmd-l = 'focus right --boundaries all-monitors-outer-frame'
     # Smart move (trial), h/l: in a row -> stack with neighbour; in a stack -> step out. See smart-move.sh.
-    # A|B, B left: A/B; left again: B|A. j/k: plain move. Plain move (wraps at edge) stays in service mode.
+    # A|B, B left: A/B; left again: B|A. j/k: swap in stack, split off at its end; stop in a row.
+    # Plain move (wraps at edge) stays in service mode.
     ctrl-alt-cmd-shift-h = 'exec-and-forget ~/.config/aerospace/smart-move.sh left'
-    ctrl-alt-cmd-shift-j = 'move down --boundaries all-monitors-outer-frame --boundaries-action stop'
-    ctrl-alt-cmd-shift-k = 'move up --boundaries all-monitors-outer-frame --boundaries-action stop'
+    ctrl-alt-cmd-shift-j = "test %{window-layout} ~= '^v_' && move down --boundaries all-monitors-outer-frame --boundaries-action create-implicit-container || move down --boundaries all-monitors-outer-frame --boundaries-action stop"
+    ctrl-alt-cmd-shift-k = "test %{window-layout} ~= '^v_' && move up --boundaries all-monitors-outer-frame --boundaries-action create-implicit-container || move up --boundaries all-monitors-outer-frame --boundaries-action stop"
     ctrl-alt-cmd-shift-l = 'exec-and-forget ~/.config/aerospace/smart-move.sh right'
 
     # Workspaces
