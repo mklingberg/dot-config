@@ -16,7 +16,7 @@ after-login-command = []
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = true
+start-at-login = false  # OmniWM trial week (2026-10-19); set back to true when returning
 
 exec-on-workspace-change = []
 
