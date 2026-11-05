@@ -18,17 +18,19 @@ The script bootstraps itself: if `~/.config` isn't the repo yet, it installs the
 
 ## What defines the setup
 
-### AeroSpace
+### OmniWM
 The backbone of the desktop.
 
-AeroSpace handles tiling, workspace movement, monitor assignment, and most of the navigation model. The config shows this is not just "installed" - it is the primary control layer:
-- numbered workspaces
-- hjkl-style focus and move bindings
-- floating exceptions for specific apps
-- monitor-aware workspace assignment
+OmniWM is the tiling window manager (replaced AeroSpace, now in `_archive/aerospace/`). Caps Lock is Hyper (`Control+Option+Command`) and drives the navigation model:
+- niri-style scrolling columns as the default layout, dwindle available
+- hotkeys for focus, move, workspaces and resize
+- focus and move cross monitors at the edge
+- workspace bar, overview, quake terminal and app rules
+
+It reads `~/.config/omniwm/settings.toml` in place, so nothing needs exporting or importing.
 
 Config:
-- `aerospace/aerospace.toml`
+- `omniwm/settings.toml`
 
 ### Ghostty + Starship + Zsh
 This is the real terminal stack.
