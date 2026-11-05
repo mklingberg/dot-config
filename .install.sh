@@ -71,6 +71,7 @@ brew install --cask bettermouse
 brew install --cask abue-ammar/tinycast/tinycast
 brew install --cask spotify
 brew install --cask nikitabobko/tap/aerospace
+brew install --cask omniwm  # reads ~/.config/omniwm/settings.toml in place, no export/import needed
 brew install --cask vorssaint
 brew install --cask caskhub
 
