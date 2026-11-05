@@ -4,6 +4,8 @@
 <dict>
 	<key>appLanguage</key>
 	<string>en-US</string>
+	<key>appVolumesArePositions</key>
+	<true/>
 	<key>autoQuitEnabled</key>
 	<true/>
 	<key>batteryLimitPercent</key>
@@ -18,10 +20,14 @@
 	<integer>50</integer>
 	<key>clipboardHistoryMenuBarPreviewLength</key>
 	<integer>20</integer>
+	<key>clipboardHistoryRetentionDays</key>
+	<integer>0</integer>
 	<key>clipboardHistoryShortcut</key>
 	<string>control+option+command:9</string>
 	<key>colorPickerShortcut</key>
 	<string>control+option+command:8</string>
+	<key>colorPickerShortcutEnabled</key>
+	<true/>
 	<key>commandBarCompactMode</key>
 	<true/>
 	<key>commandBarShortcut</key>
@@ -49,19 +55,19 @@
 	<key>featureAvailable.cleaningMode</key>
 	<false/>
 	<key>featureAvailable.clipboardHistory</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.colorPicker</key>
 	<true/>
 	<key>featureAvailable.commandBar</key>
 	<false/>
 	<key>featureAvailable.connectedDevices</key>
-	<false/>
+	<true/>
 	<key>featureAvailable.diskImageInstaller</key>
 	<false/>
 	<key>featureAvailable.dockClick</key>
 	<false/>
 	<key>featureAvailable.dockPreview</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.extraBrightness</key>
 	<false/>
 	<key>featureAvailable.fanControl</key>
@@ -71,15 +77,15 @@
 	<key>featureAvailable.finderRename</key>
 	<false/>
 	<key>featureAvailable.focusFollowsMouse</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.homebrew</key>
 	<false/>
 	<key>featureAvailable.keepAwake</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.keyboardDebounce</key>
 	<false/>
 	<key>featureAvailable.killProcess</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.linearScroll</key>
 	<false/>
 	<key>featureAvailable.mediaTools</key>
@@ -117,9 +123,9 @@
 	<key>featureAvailable.notchAccessories</key>
 	<true/>
 	<key>featureAvailable.notchAgents</key>
-	<false/>
-	<key>featureAvailable.notchCalendar</key>
 	<true/>
+	<key>featureAvailable.notchCalendar</key>
+	<false/>
 	<key>featureAvailable.notchDownloads</key>
 	<true/>
 	<key>featureAvailable.notchGestures</key>
@@ -131,7 +137,7 @@
 	<key>featureAvailable.notchMascot</key>
 	<false/>
 	<key>featureAvailable.notchNotifications</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.notchQueue</key>
 	<true/>
 	<key>featureAvailable.notchTimer</key>
@@ -139,11 +145,11 @@
 	<key>featureAvailable.notchWatch</key>
 	<false/>
 	<key>featureAvailable.pastePlain</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.portManager</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.quickLauncher</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.quickToggles</key>
 	<false/>
 	<key>featureAvailable.quitWindowProtection</key>
@@ -153,7 +159,7 @@
 	<key>featureAvailable.scratchpad</key>
 	<true/>
 	<key>featureAvailable.screenOCR</key>
-	<false/>
+	<true/>
 	<key>featureAvailable.screenRecorder</key>
 	<false/>
 	<key>featureAvailable.screenshot</key>
@@ -171,7 +177,7 @@
 	<key>featureAvailable.spacesOrder</key>
 	<false/>
 	<key>featureAvailable.superKey</key>
-	<true/>
+	<false/>
 	<key>featureAvailable.switcher</key>
 	<true/>
 	<key>featureAvailable.textSnippets</key>
@@ -212,33 +218,63 @@
 	<false/>
 	<key>menuBarCombineTemperatures</key>
 	<true/>
+	<key>menuBarConnectedDevices</key>
+	<false/>
 	<key>menuBarDiskActivity</key>
 	<false/>
 	<key>menuBarGPU</key>
-	<false/>
+	<true/>
 	<key>menuBarHideIconWithMetrics</key>
 	<true/>
+	<key>menuBarIconSymbol</key>
+	<string>leaf.fill</string>
 	<key>menuBarMemory</key>
 	<true/>
+	<key>menuBarMemoryStyle</key>
+	<string>percent</string>
 	<key>menuBarMetricAppearance</key>
-	<string>values</string>
+	<string>bars</string>
 	<key>menuBarMetricSpacing</key>
 	<string>compact</string>
+	<key>menuBarNetwork</key>
+	<false/>
+	<key>menuBarNetworkUploadFirst</key>
+	<true/>
 	<key>menuBarPeripheralBattery</key>
 	<false/>
 	<key>menuBarPower</key>
 	<false/>
 	<key>menuBarSeparateMetrics</key>
 	<false/>
+	<key>micMuteActive</key>
+	<false/>
+	<key>micMuteMenuBarIndicator</key>
+	<true/>
+	<key>micMuteMutedDevices</key>
+	<array/>
+	<key>micMuteSavedChannelVolumes</key>
+	<dict/>
+	<key>micMuteSavedVolumes</key>
+	<dict/>
+	<key>micMuteShortcut</key>
+	<string>control+option+shift+command:46</string>
+	<key>micMuteShortcutEnabled</key>
+	<true/>
 	<key>minimalWindowPreviews</key>
 	<false/>
+	<key>mixerHeadphonesDisconnectSilenceAllowed</key>
+	<true/>
 	<key>monitorAlertBattery</key>
 	<true/>
 	<key>monitorAlertBatteryPercent</key>
 	<integer>15</integer>
+	<key>monitorAlertBatteryTemperature</key>
+	<true/>
 	<key>monitorAlertBatteryTemperatureThreshold</key>
 	<integer>40</integer>
 	<key>monitorAlertCPU</key>
+	<true/>
+	<key>monitorAlertCPUTemperature</key>
 	<true/>
 	<key>monitorAlertCPUTemperatureThreshold</key>
 	<integer>90</integer>
@@ -247,7 +283,7 @@
 	<key>monitorAlertCooldownMinutes</key>
 	<integer>15</integer>
 	<key>monitorAlertDisk</key>
-	<false/>
+	<true/>
 	<key>monitorAlertDiskFreePercent</key>
 	<integer>10</integer>
 	<key>monitorAlertMemory</key>
@@ -256,22 +292,50 @@
 	<integer>5</integer>
 	<key>monitorMemoryMetric</key>
 	<string>used</string>
+	<key>monitorPwrPeripherals</key>
+	<false/>
 	<key>monitorPwrTemperature</key>
 	<true/>
 	<key>notchAccessoriesEnabled</key>
 	<true/>
+	<key>notchAgentsClaude</key>
+	<true/>
+	<key>notchAgentsClaudeProfile</key>
+	<string></string>
+	<key>notchAgentsCodex</key>
+	<false/>
+	<key>notchAgentsEnabled</key>
+	<true/>
+	<key>notchAgentsLimitDisplay</key>
+	<string>remaining</string>
+	<key>notchAgentsOpenCode</key>
+	<true/>
+	<key>notchAgentsPeriod</key>
+	<string>week</string>
+	<key>notchAgentsReadout</key>
+	<string>elapsed</string>
 	<key>notchAppPanel</key>
 	<false/>
+	<key>notchBrowserCovers</key>
+	<true/>
 	<key>notchCalendarEnabled</key>
 	<false/>
 	<key>notchCameraFitWidth</key>
 	<real>0.0</real>
+	<key>notchCapsuleFitWidth</key>
+	<real>40.0</real>
 	<key>notchCloseDelay</key>
 	<real>0.1</real>
+	<key>notchCoversMenus</key>
+	<false/>
 	<key>notchCustomHeight</key>
 	<real>260.0</real>
 	<key>notchCustomWidth</key>
-	<real>589.4609375</real>
+	<real>600.0</real>
+	<key>notchDismissNativeNotifications</key>
+	<true/>
+	<key>notchDisplay</key>
+	<string>all</string>
 	<key>notchDownloadsEnabled</key>
 	<true/>
 	<key>notchEnabled</key>
@@ -279,9 +343,11 @@
 	<key>notchGesturesEnabled</key>
 	<false/>
 	<key>notchHiddenModules</key>
-	<string>calendar,controls,tools,watch</string>
+	<string>calendar,controls,notifications,tools,watch</string>
 	<key>notchHideInFullscreen</key>
 	<true/>
+	<key>notchHideMenuBarGap</key>
+	<false/>
 	<key>notchHideUntilHover</key>
 	<false/>
 	<key>notchHidesMenuBarIcon</key>
@@ -296,18 +362,30 @@
 	<true/>
 	<key>notchLiquidGlassEnabled</key>
 	<true/>
+	<key>notchLiveEqualizer</key>
+	<true/>
+	<key>notchLowBatteryEarly</key>
+	<true/>
+	<key>notchLowBatteryEarlyThreshold</key>
+	<integer>30</integer>
+	<key>notchLowBatteryMenuBar</key>
+	<false/>
 	<key>notchLowBatteryTint</key>
 	<true/>
 	<key>notchLyricsEnabled</key>
 	<true/>
+	<key>notchMusicShowVolume</key>
+	<false/>
 	<key>notchNotificationsEnabled</key>
-	<true/>
+	<false/>
 	<key>notchOpenOnHover</key>
 	<true/>
 	<key>notchOpensActivity</key>
 	<true/>
 	<key>notchOutlineEnabled</key>
 	<false/>
+	<key>notchPreferredPlayer</key>
+	<string>com.spotify.client</string>
 	<key>notchQueueEnabled</key>
 	<true/>
 	<key>notchQuickAccessLayout</key>
@@ -315,6 +393,8 @@
 	eyJidXR0b25zIjpbXSwidmVyc2lvbiI6MX0=
 	</data>
 	<key>notchScratchpadControlHidden</key>
+	<true/>
+	<key>notchShowPlayingMusic</key>
 	<true/>
 	<key>notchSilhouette</key>
 	<string>notch</string>
@@ -334,13 +414,27 @@
 	<false/>
 	<key>pastePlainEnabled</key>
 	<true/>
+	<key>radialMenuEnabled</key>
+	<false/>
+	<key>screenOCRShortcut</key>
+	<string>control+option+command:17</string>
+	<key>screenOCRShortcutEnabled</key>
+	<false/>
 	<key>screenshotAnnotationShadows</key>
 	<true/>
+	<key>screenshotDefaultAction</key>
+	<string>edit</string>
 	<key>screenshotFullScreenShortcutEnabled</key>
 	<false/>
+	<key>screenshotHideVorssaintWindows</key>
+	<false/>
 	<key>screenshotShortcut</key>
-	<string>control+option+shift+command:1</string>
+	<string>control+option+command:1</string>
 	<key>screenshotShortcutEnabled</key>
+	<true/>
+	<key>screenshotShowCaptureMenuOnShortcut</key>
+	<false/>
+	<key>screenshotToolShortcutsEnabled</key>
 	<true/>
 	<key>screenshotWatermarkStyle</key>
 	<string>{"anchor":"bottomTrailing","text":"Marcus","kind":"image","color":"white","rotation":0,"opacity":0.4,"size":0.3}</string>
@@ -349,19 +443,21 @@
 	<key>shelfEnabled</key>
 	<true/>
 	<key>superKeyEnabled</key>
-	<true/>
-	<key>superKeyMappedSource</key>
-	<string>capsLock</string>
+	<false/>
 	<key>switcherAppearanceDelay</key>
 	<integer>0</integer>
 	<key>switcherEnabled</key>
 	<true/>
+	<key>switcherIconRowMode</key>
+	<true/>
 	<key>switcherInstantSelection</key>
+	<false/>
+	<key>switcherMergeTabs</key>
 	<false/>
 	<key>switcherPreviewExcludedApps</key>
 	<array/>
 	<key>switcherPreviewSize</key>
-	<string>normal</string>
+	<string>large</string>
 	<key>switcherSearchPinEnabled</key>
 	<true/>
 	<key>switcherTakeOverSystemShortcuts</key>
@@ -379,6 +475,8 @@
 	<true/>
 	<key>wallpaperApplyAllDisplays</key>
 	<false/>
+	<key>whatsNewKnownFeatures</key>
+	<string>switcher,dockPreview,dockClick,windowMaximizer,windowLayout,autoQuit,spacesOrder,scrollInverter,scrollHorizontal,scrollZoom,focusFollowsMouse,smoothScroll,linearScroll,mouseAcceleration,mouseNavigation,mouseButtonShortcuts,middleClick,mouseClickDebounce,keyboardDebounce,textSnippets,superKey,quitWindowProtection,clipboardHistory,pastePlain,finderCutPaste,finderRename,shelf,urlCleaner,diskImageInstaller,mixer,soundOutputSwitcher,audioPriority,micMute,musicBlock,keepAwake,brightness,extraBrightness,bluetoothSleep,quickLauncher,quickToggles,quitApps,colorPicker,screenOCR,cleaningMode,mediaTools,cleaner,uninstaller,homebrew,appUpdates,screenshot,cameraPreview,radialMenu,scratchpad,commandBar,screenRecorder,wallpaper,killProcess,portManager,notch,notchCalendar,notchNotifications,notchGestures,notchTimer,notchAccessories,notchLyrics,notchQueue,notchLiveEqualizer,notchDownloads,notchAgents,notchWatch,notchMascot,monitorCPU,monitorGPU,monitorMemory,monitorNetwork,monitorDisk,monitorPower,connectedDevices,fanControl</string>
 	<key>windowEdgeSnapEnabled</key>
 	<false/>
 	<key>windowGestureEnabled</key>
