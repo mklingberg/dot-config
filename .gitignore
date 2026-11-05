@@ -16,6 +16,8 @@
 !starship
 !starship.toml
 !aerospace
+!omniwm
+!omniwm/**/*
 !aerospace/**/*
 !aerospace.toml
 !.install.sh
