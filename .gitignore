@@ -28,6 +28,7 @@
 !vorssaint/**/*
 !bettertouchtool
 !bettertouchtool/**/*
+bettertouchtool/backups/
 !bettermouse
 !bettermouse/**/*
 !secrets
