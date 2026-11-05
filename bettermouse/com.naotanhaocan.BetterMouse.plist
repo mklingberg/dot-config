@@ -28,6 +28,29 @@
 								<dict/>
 							</dict>
 							<array>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>37</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
 								<integer>4</integer>
 								<dict>
 									<key>actionSel</key>
@@ -43,30 +66,7 @@
 									<key>hotkeyKey</key>
 									<integer>38</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>4</integer>
-									<key>hotkeyMod</key>
-									<integer>262401</integer>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -89,7 +89,195 @@
 									<key>hotkeyKey</key>
 									<integer>40</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+					</array>
+					<integer>5</integer>
+					<array>
+						<integer>28</integer>
+						<array>
+							<dict>
+								<key>Click</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>2</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>3</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>37</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>4</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>38</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>0</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>40</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+						<integer>30</integer>
+						<array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -112,100 +300,7 @@
 									<key>hotkeyKey</key>
 									<integer>37</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>6</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>LongPress</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>1</integer>
-									<key>hotkeyMod</key>
-									<integer>393475</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>5</integer>
-					<array>
-						<integer>4</integer>
-						<array>
-							<dict>
-								<key>Move</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>0</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>126</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>123</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -226,139 +321,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>125</integer>
+									<integer>38</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>126</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-						<integer>6</integer>
-						<array>
-							<dict>
-								<key>Move</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>4</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>125</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>123</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -379,9 +344,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>126</integer>
+									<integer>40</integer>
 									<key>hotkeyMod</key>
-									<integer>10879235</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -393,104 +358,6 @@
 						</array>
 						<integer>0</integer>
 						<array>
-							<dict>
-								<key>Move</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>0</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>28</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<false/>
-									<key>clickThEn</key>
-									<false/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>0</integer>
-									<key>hotkeyMod</key>
-									<integer>0</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<false/>
-									<key>multiShot</key>
-									<true/>
-								</dict>
-								<integer>4</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>29</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<false/>
-									<key>clickThEn</key>
-									<false/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>0</integer>
-									<key>hotkeyMod</key>
-									<integer>0</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<false/>
-									<key>multiShot</key>
-									<true/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>48</integer>
-									<key>hotkeyMod</key>
-									<integer>393475</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>48</integer>
-									<key>hotkeyMod</key>
-									<integer>262401</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
 							<dict>
 								<key>LongPress</key>
 								<dict/>
@@ -518,6 +385,104 @@
 									<false/>
 									<key>multiShot</key>
 									<false/>
+								</dict>
+							</array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>35</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>0</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>28</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<false/>
+									<key>clickThEn</key>
+									<false/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>0</integer>
+									<key>hotkeyMod</key>
+									<integer>0</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<false/>
+									<key>multiShot</key>
+									<true/>
+								</dict>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>45</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>4</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>29</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<false/>
+									<key>clickThEn</key>
+									<false/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>0</integer>
+									<key>hotkeyMod</key>
+									<integer>0</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<false/>
+									<key>multiShot</key>
+									<true/>
 								</dict>
 							</array>
 						</array>
@@ -621,6 +586,237 @@
 				<array>
 					<integer>5</integer>
 					<array>
+						<integer>28</integer>
+						<array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>0</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>40</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>4</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>38</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>37</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+							<dict>
+								<key>Click</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>2</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>3</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+						<integer>30</integer>
+						<array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>4</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>38</integer>
+									<key>hotkeyMod</key>
+									<integer>1966379</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>0</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>40</integer>
+									<key>hotkeyMod</key>
+									<integer>1966379</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>37</integer>
+									<key>hotkeyMod</key>
+									<integer>1966379</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1966379</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
 						<integer>0</integer>
 						<array>
 							<dict>
@@ -664,9 +860,32 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>48</integer>
+									<integer>45</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>35</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -696,29 +915,6 @@
 									<false/>
 									<key>multiShot</key>
 									<true/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>48</integer>
-									<key>hotkeyMod</key>
-									<integer>393475</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
 								</dict>
 							</array>
 							<dict>
@@ -751,7 +947,10 @@
 								</dict>
 							</array>
 						</array>
-						<integer>4</integer>
+					</array>
+					<integer>4</integer>
+					<array>
+						<integer>0</integer>
 						<array>
 							<dict>
 								<key>Click</key>
@@ -771,107 +970,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>126</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-							<dict>
-								<key>Move</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>4</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>125</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
 									<integer>124</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>0</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>126</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>123</integer>
-									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>11534600</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -881,14 +982,17 @@
 								</dict>
 							</array>
 						</array>
-						<integer>6</integer>
+					</array>
+					<integer>3</integer>
+					<array>
+						<integer>0</integer>
 						<array>
 							<dict>
-								<key>Move</key>
+								<key>Click</key>
 								<dict/>
 							</dict>
 							<array>
-								<integer>1</integer>
+								<integer>2</integer>
 								<dict>
 									<key>actionSel</key>
 									<integer>0</integer>
@@ -903,76 +1007,7 @@
 									<key>hotkeyKey</key>
 									<integer>123</integer>
 									<key>hotkeyMod</key>
-									<integer>10879235</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>0</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>126</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>4</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>125</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
+									<integer>11534600</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1008,29 +1043,6 @@
 									<integer>123</integer>
 									<key>hotkeyMod</key>
 									<integer>11534600</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>12058920</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1084,89 +1096,7 @@
 									<key>multiShot</key>
 									<false/>
 								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>3</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>123</integer>
-									<key>hotkeyMod</key>
-									<integer>11534600</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>6</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>LongPress</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>1</integer>
-									<key>hotkeyMod</key>
-									<integer>393475</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>4</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
+								<integer>3</integer>
 								<dict>
 									<key>actionSel</key>
 									<integer>0</integer>
@@ -1181,7 +1111,7 @@
 									<key>hotkeyKey</key>
 									<integer>124</integer>
 									<key>hotkeyMod</key>
-									<integer>11534600</integer>
+									<integer>12058920</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1284,16 +1214,16 @@
 			<dict>
 				<key>btn</key>
 				<array>
-					<integer>5</integer>
+					<integer>3</integer>
 					<array>
-						<integer>4</integer>
+						<integer>16</integer>
 						<array>
 							<dict>
-								<key>Move</key>
+								<key>Click</key>
 								<dict/>
 							</dict>
 							<array>
-								<integer>1</integer>
+								<integer>2</integer>
 								<dict>
 									<key>actionSel</key>
 									<integer>0</integer>
@@ -1308,7 +1238,7 @@
 									<key>hotkeyKey</key>
 									<integer>123</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>12058920</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1316,7 +1246,16 @@
 									<key>multiShot</key>
 									<false/>
 								</dict>
-								<integer>3</integer>
+							</array>
+						</array>
+						<integer>0</integer>
+						<array>
+							<dict>
+								<key>Click</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>2</integer>
 								<dict>
 									<key>actionSel</key>
 									<integer>0</integer>
@@ -1329,9 +1268,44 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>124</integer>
+									<integer>123</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>11534600</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+					</array>
+					<integer>1</integer>
+					<array>
+						<integer>0</integer>
+						<array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>0</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>40</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1352,9 +1326,203 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>125</integer>
+									<integer>38</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>37</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+					</array>
+					<integer>4</integer>
+					<array>
+						<integer>16</integer>
+						<array>
+							<dict>
+								<key>Click</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>2</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>124</integer>
+									<key>hotkeyMod</key>
+									<integer>12058920</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+						<integer>0</integer>
+						<array>
+							<dict>
+								<key>Click</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>2</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>124</integer>
+									<key>hotkeyMod</key>
+									<integer>11534600</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+							</array>
+						</array>
+					</array>
+					<integer>5</integer>
+					<array>
+						<integer>28</integer>
+						<array>
+							<dict>
+								<key>Move</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>3</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>37</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>1</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>4</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<true/>
+									<key>multiShot</key>
+									<false/>
+								</dict>
+								<integer>4</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>0</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<true/>
+									<key>clickThEn</key>
+									<true/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>38</integer>
+									<key>hotkeyMod</key>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1375,9 +1543,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>126</integer>
+									<integer>40</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1404,9 +1572,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>126</integer>
+									<integer>3</integer>
 									<key>hotkeyMod</key>
-									<integer>10748161</integer>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1416,36 +1584,13 @@
 								</dict>
 							</array>
 						</array>
-						<integer>6</integer>
+						<integer>0</integer>
 						<array>
 							<dict>
 								<key>Move</key>
 								<dict/>
 							</dict>
 							<array>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>10879235</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
 								<integer>1</integer>
 								<dict>
 									<key>actionSel</key>
@@ -1459,9 +1604,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>123</integer>
+									<integer>35</integer>
 									<key>hotkeyMod</key>
-									<integer>10879235</integer>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1469,7 +1614,7 @@
 									<key>multiShot</key>
 									<false/>
 								</dict>
-								<integer>0</integer>
+								<integer>3</integer>
 								<dict>
 									<key>actionSel</key>
 									<integer>0</integer>
@@ -1482,9 +1627,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>126</integer>
+									<integer>45</integer>
 									<key>hotkeyMod</key>
-									<integer>10879235</integer>
+									<integer>1835305</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1495,23 +1640,75 @@
 								<integer>4</integer>
 								<dict>
 									<key>actionSel</key>
-									<integer>0</integer>
+									<integer>29</integer>
 									<key>appName</key>
 									<string></string>
 									<key>clickTh</key>
-									<true/>
+									<false/>
 									<key>clickThEn</key>
-									<true/>
+									<false/>
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>125</integer>
+									<integer>0</integer>
 									<key>hotkeyMod</key>
-									<integer>10879235</integer>
+									<integer>0</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
+									<false/>
+									<key>multiShot</key>
 									<true/>
+								</dict>
+								<integer>0</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>28</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<false/>
+									<key>clickThEn</key>
+									<false/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>0</integer>
+									<key>hotkeyMod</key>
+									<integer>0</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<false/>
+									<key>multiShot</key>
+									<true/>
+								</dict>
+							</array>
+							<dict>
+								<key>LongPress</key>
+								<dict/>
+							</dict>
+							<array>
+								<integer>2</integer>
+								<dict>
+									<key>actionSel</key>
+									<integer>13</integer>
+									<key>appName</key>
+									<string></string>
+									<key>clickTh</key>
+									<false/>
+									<key>clickThEn</key>
+									<false/>
+									<key>enabled</key>
+									<true/>
+									<key>hotkeyKey</key>
+									<integer>0</integer>
+									<key>hotkeyMod</key>
+									<integer>0</integer>
+									<key>hotkeyName</key>
+									<string></string>
+									<key>isHotkey</key>
+									<false/>
 									<key>multiShot</key>
 									<false/>
 								</dict>
@@ -1601,207 +1798,7 @@
 								</dict>
 							</array>
 						</array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>Move</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>3</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>48</integer>
-									<key>hotkeyMod</key>
-									<integer>262401</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>1</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>48</integer>
-									<key>hotkeyMod</key>
-									<integer>393475</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>4</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>29</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<false/>
-									<key>clickThEn</key>
-									<false/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>0</integer>
-									<key>hotkeyMod</key>
-									<integer>0</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<false/>
-									<key>multiShot</key>
-									<true/>
-								</dict>
-								<integer>0</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>28</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<false/>
-									<key>clickThEn</key>
-									<false/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>0</integer>
-									<key>hotkeyMod</key>
-									<integer>0</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<false/>
-									<key>multiShot</key>
-									<true/>
-								</dict>
-							</array>
-							<dict>
-								<key>LongPress</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>13</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<false/>
-									<key>clickThEn</key>
-									<false/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>0</integer>
-									<key>hotkeyMod</key>
-									<integer>0</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<false/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>4</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>11534600</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-						<integer>16</integer>
-						<array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>124</integer>
-									<key>hotkeyMod</key>
-									<integer>12058920</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>1</integer>
-					<array>
-						<integer>0</integer>
+						<integer>30</integer>
 						<array>
 							<dict>
 								<key>Move</key>
@@ -1823,30 +1820,7 @@
 									<key>hotkeyKey</key>
 									<integer>40</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-								<integer>4</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>38</integer>
-									<key>hotkeyMod</key>
-									<integer>262401</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1869,7 +1843,7 @@
 									<key>hotkeyKey</key>
 									<integer>4</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1892,7 +1866,7 @@
 									<key>hotkeyKey</key>
 									<integer>37</integer>
 									<key>hotkeyMod</key>
-									<integer>262401</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -1900,19 +1874,7 @@
 									<key>multiShot</key>
 									<false/>
 								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>6</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>LongPress</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
+								<integer>4</integer>
 								<dict>
 									<key>actionSel</key>
 									<integer>0</integer>
@@ -1925,76 +1887,9 @@
 									<key>enabled</key>
 									<true/>
 									<key>hotkeyKey</key>
-									<integer>1</integer>
+									<integer>38</integer>
 									<key>hotkeyMod</key>
-									<integer>393475</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-					</array>
-					<integer>3</integer>
-					<array>
-						<integer>0</integer>
-						<array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>123</integer>
-									<key>hotkeyMod</key>
-									<integer>11534600</integer>
-									<key>hotkeyName</key>
-									<string></string>
-									<key>isHotkey</key>
-									<true/>
-									<key>multiShot</key>
-									<false/>
-								</dict>
-							</array>
-						</array>
-						<integer>16</integer>
-						<array>
-							<dict>
-								<key>Click</key>
-								<dict/>
-							</dict>
-							<array>
-								<integer>2</integer>
-								<dict>
-									<key>actionSel</key>
-									<integer>0</integer>
-									<key>appName</key>
-									<string></string>
-									<key>clickTh</key>
-									<true/>
-									<key>clickThEn</key>
-									<true/>
-									<key>enabled</key>
-									<true/>
-									<key>hotkeyKey</key>
-									<integer>123</integer>
-									<key>hotkeyMod</key>
-									<integer>12058920</integer>
+									<integer>1966379</integer>
 									<key>hotkeyName</key>
 									<string></string>
 									<key>isHotkey</key>
@@ -2102,7 +1997,7 @@
 		<key>email</key>
 		<string>marcus.klingberg@gmail.com</string>
 		<key>hideIcon</key>
-		<true/>
+		<false/>
 		<key>leftDragLimit</key>
 		<true/>
 		<key>leftDragLimitRange</key>
@@ -2135,7 +2030,7 @@
 		<key>tightenIcon</key>
 		<false/>
 		<key>trialLeft</key>
-		<real>-670.0274074074074</real>
+		<real>-685.0</real>
 	</dict>
 	<key>ee</key>
 	<dict>
@@ -4164,60 +4059,60 @@
 				<false/>
 				<key>id1b04List</key>
 				<array>
-					<integer>267</integer>
-					<integer>48</integer>
 					<integer>282</integer>
 					<integer>48</integer>
-					<integer>264</integer>
-					<integer>58</integer>
-					<integer>271</integer>
-					<integer>48</integer>
-					<integer>321</integer>
-					<integer>58</integer>
-					<integer>231</integer>
-					<integer>58</integer>
-					<integer>266</integer>
-					<integer>58</integer>
 					<integer>226</integer>
 					<integer>58</integer>
-					<integer>273</integer>
-					<integer>48</integer>
-					<integer>279</integer>
-					<integer>48</integer>
-					<integer>281</integer>
-					<integer>48</integer>
-					<integer>269</integer>
-					<integer>48</integer>
-					<integer>272</integer>
-					<integer>48</integer>
-					<integer>268</integer>
-					<integer>48</integer>
 					<integer>277</integer>
-					<integer>48</integer>
-					<integer>316</integer>
-					<integer>48</integer>
-					<integer>212</integer>
-					<integer>58</integer>
-					<integer>270</integer>
-					<integer>48</integer>
-					<integer>227</integer>
-					<integer>58</integer>
-					<integer>280</integer>
-					<integer>48</integer>
-					<integer>283</integer>
-					<integer>48</integer>
-					<integer>233</integer>
-					<integer>52</integer>
-					<integer>284</integer>
-					<integer>58</integer>
-					<integer>232</integer>
-					<integer>52</integer>
-					<integer>286</integer>
-					<integer>48</integer>
-					<integer>274</integer>
 					<integer>48</integer>
 					<integer>259</integer>
 					<integer>58</integer>
+					<integer>269</integer>
+					<integer>48</integer>
+					<integer>279</integer>
+					<integer>48</integer>
+					<integer>227</integer>
+					<integer>58</integer>
+					<integer>316</integer>
+					<integer>48</integer>
+					<integer>270</integer>
+					<integer>48</integer>
+					<integer>268</integer>
+					<integer>48</integer>
+					<integer>273</integer>
+					<integer>48</integer>
+					<integer>264</integer>
+					<integer>58</integer>
+					<integer>212</integer>
+					<integer>58</integer>
+					<integer>233</integer>
+					<integer>52</integer>
+					<integer>232</integer>
+					<integer>52</integer>
+					<integer>281</integer>
+					<integer>48</integer>
+					<integer>272</integer>
+					<integer>48</integer>
+					<integer>271</integer>
+					<integer>48</integer>
+					<integer>283</integer>
+					<integer>48</integer>
+					<integer>266</integer>
+					<integer>58</integer>
+					<integer>267</integer>
+					<integer>48</integer>
+					<integer>321</integer>
+					<integer>58</integer>
+					<integer>280</integer>
+					<integer>48</integer>
+					<integer>274</integer>
+					<integer>48</integer>
+					<integer>284</integer>
+					<integer>58</integer>
+					<integer>231</integer>
+					<integer>58</integer>
+					<integer>286</integer>
+					<integer>48</integer>
 				</array>
 				<key>key</key>
 				<array>
@@ -4368,9 +4263,9 @@
 				<integer>4261</integer>
 				<key>quirks</key>
 				<array>
-					<integer>195</integer>
-					<true/>
 					<integer>196</integer>
+					<true/>
+					<integer>195</integer>
 					<true/>
 				</array>
 				<key>ratchetMode</key>
@@ -4394,7 +4289,7 @@
 					</dict>
 					<false/>
 					<dict>
-						<key>None</key>
+						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4404,7 +4299,7 @@
 					</dict>
 					<false/>
 					<dict>
-						<key>Zoom</key>
+						<key>None</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4422,7 +4317,7 @@
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>Button</key>
+						<key>VScroll</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4432,7 +4327,7 @@
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>VScroll</key>
+						<key>Button</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4516,9 +4411,9 @@
 				<integer>4261</integer>
 				<key>quirks</key>
 				<array>
-					<integer>195</integer>
-					<true/>
 					<integer>196</integer>
+					<true/>
+					<integer>195</integer>
 					<true/>
 				</array>
 				<key>ratchetMode</key>
@@ -4532,7 +4427,17 @@
 				<key>twDirInv</key>
 				<array>
 					<dict>
+						<key>Zoom</key>
+						<dict/>
+					</dict>
+					<false/>
+					<dict>
 						<key>VScroll</key>
+						<dict/>
+					</dict>
+					<false/>
+					<dict>
+						<key>HScroll</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4546,26 +4451,16 @@
 						<dict/>
 					</dict>
 					<false/>
-					<dict>
-						<key>Zoom</key>
-						<dict/>
-					</dict>
-					<false/>
-					<dict>
-						<key>HScroll</key>
-						<dict/>
-					</dict>
-					<false/>
 				</array>
 				<key>twSpeed</key>
 				<array>
 					<dict>
-						<key>HScroll</key>
+						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>Zoom</key>
+						<key>HScroll</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4666,9 +4561,9 @@
 				<integer>4261</integer>
 				<key>quirks</key>
 				<array>
-					<integer>196</integer>
-					<true/>
 					<integer>195</integer>
+					<true/>
+					<integer>196</integer>
 					<true/>
 				</array>
 				<key>ratchetMode</key>
@@ -4682,17 +4577,17 @@
 				<key>twDirInv</key>
 				<array>
 					<dict>
+						<key>VScroll</key>
+						<dict/>
+					</dict>
+					<false/>
+					<dict>
 						<key>Button</key>
 						<dict/>
 					</dict>
 					<false/>
 					<dict>
-						<key>None</key>
-						<dict/>
-					</dict>
-					<false/>
-					<dict>
-						<key>VScroll</key>
+						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4702,7 +4597,7 @@
 					</dict>
 					<false/>
 					<dict>
-						<key>Zoom</key>
+						<key>None</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4710,12 +4605,12 @@
 				<key>twSpeed</key>
 				<array>
 					<dict>
-						<key>None</key>
+						<key>Button</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>Zoom</key>
+						<key>None</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4730,7 +4625,7 @@
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>Button</key>
+						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4827,12 +4722,17 @@
 				<key>twDirInv</key>
 				<array>
 					<dict>
-						<key>None</key>
+						<key>HScroll</key>
 						<dict/>
 					</dict>
 					<false/>
 					<dict>
-						<key>HScroll</key>
+						<key>VScroll</key>
+						<dict/>
+					</dict>
+					<false/>
+					<dict>
+						<key>None</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4846,16 +4746,16 @@
 						<dict/>
 					</dict>
 					<false/>
-					<dict>
-						<key>VScroll</key>
-						<dict/>
-					</dict>
-					<false/>
 				</array>
 				<key>twSpeed</key>
 				<array>
 					<dict>
-						<key>HScroll</key>
+						<key>Button</key>
+						<dict/>
+					</dict>
+					<real>1.0</real>
+					<dict>
+						<key>VScroll</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4865,12 +4765,7 @@
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>Button</key>
-						<dict/>
-					</dict>
-					<real>1.0</real>
-					<dict>
-						<key>VScroll</key>
+						<key>HScroll</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -4961,9 +4856,9 @@
 				<integer>4261</integer>
 				<key>quirks</key>
 				<array>
-					<integer>195</integer>
-					<true/>
 					<integer>196</integer>
+					<true/>
+					<integer>195</integer>
 					<true/>
 				</array>
 				<key>ratchetMode</key>
@@ -4977,7 +4872,12 @@
 				<key>twDirInv</key>
 				<array>
 					<dict>
-						<key>None</key>
+						<key>Button</key>
+						<dict/>
+					</dict>
+					<false/>
+					<dict>
+						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -4987,17 +4887,12 @@
 					</dict>
 					<false/>
 					<dict>
+						<key>None</key>
+						<dict/>
+					</dict>
+					<false/>
+					<dict>
 						<key>VScroll</key>
-						<dict/>
-					</dict>
-					<false/>
-					<dict>
-						<key>Button</key>
-						<dict/>
-					</dict>
-					<false/>
-					<dict>
-						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<false/>
@@ -5005,7 +4900,7 @@
 				<key>twSpeed</key>
 				<array>
 					<dict>
-						<key>Zoom</key>
+						<key>VScroll</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
@@ -5015,17 +4910,17 @@
 					</dict>
 					<real>1.0</real>
 					<dict>
-						<key>VScroll</key>
+						<key>None</key>
+						<dict/>
+					</dict>
+					<real>1.0</real>
+					<dict>
+						<key>Zoom</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
 					<dict>
 						<key>Button</key>
-						<dict/>
-					</dict>
-					<real>1.0</real>
-					<dict>
-						<key>None</key>
 						<dict/>
 					</dict>
 					<real>1.0</real>
