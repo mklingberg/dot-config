@@ -231,7 +231,7 @@
 	<key>menuBarMemory</key>
 	<true/>
 	<key>menuBarMemoryStyle</key>
-	<string>percent</string>
+	<string>both</string>
 	<key>menuBarMetricAppearance</key>
 	<string>bars</string>
 	<key>menuBarMetricSpacing</key>
@@ -320,14 +320,18 @@
 	<true/>
 	<key>notchCalendarEnabled</key>
 	<false/>
+	<key>notchCameraFitHeight</key>
+	<real>0.0</real>
 	<key>notchCameraFitWidth</key>
 	<real>0.0</real>
+	<key>notchCapsuleFitDrop</key>
+	<real>2.0</real>
 	<key>notchCapsuleFitWidth</key>
 	<real>40.0</real>
 	<key>notchCloseDelay</key>
 	<real>0.1</real>
 	<key>notchCoversMenus</key>
-	<false/>
+	<true/>
 	<key>notchCustomHeight</key>
 	<real>260.0</real>
 	<key>notchCustomWidth</key>
